@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kalite ve Gıda Güvenliği Politikamız | MUTLUKAL</title>
+<meta name="description" content="MUTLUKAL Gıda Kalite ve Gıda Güvenliği Yönetim Sistemi Politikası" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-light:#FAF3E3;
+    --bg-card:#FFFFFF;
+    --text-main:#1B2A3A;
+    --text-muted:#5C6B73;
+    --gold:#C89438;
+    --gold-light:#E2B45F;
+    --gold-dark:#B88432;
+    --navy:#1B2A3A;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Outfit','Plus Jakarta Sans',sans-serif;
+    background-color:var(--bg-light);
+    color:var(--text-main);
+    letter-spacing:-0.01em;
+    overflow-x:hidden;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(200,148,56,0.10), transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(27,42,58,0.06), transparent 50%);
+    background-attachment:fixed;
+  }
+  h1,h2,h3,.font-serif{
+    font-family:'Fraunces',Georgia,serif;
+  }
+  a{color:inherit;text-decoration:none;}
+  ::-webkit-scrollbar{width:8px;}
+  ::-webkit-scrollbar-track{background:#F4EAD5;}
+  ::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px;}
+  ::-webkit-scrollbar-thumb:hover{background:var(--navy);}
+
+  .topbar{
+    position:sticky; top:0; z-index:10;
+    background:rgba(250,243,227,0.92);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(200,148,56,0.25);
+  }
+  .topbar-inner{
+    max-width:900px; margin:0 auto;
+    padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px;
+  }
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand img{height:38px; width:auto; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(27,42,58,0.15));}
+  .brand span{font-family:'Fraunces',serif; font-size:20px; font-weight:700; letter-spacing:0.03em; color:var(--text-main);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:13px; font-weight:600; color:var(--text-main);
+    padding:8px 14px; border-radius:10px;
+    background:#fff; border:1px solid rgba(200,148,56,0.3);
+    box-shadow:0 1px 2px rgba(27,42,58,0.06);
+    transition:all .25s ease;
+    white-space:nowrap;
+  }
+  .back-link:hover{color:var(--gold); border-color:var(--gold);}
+
+  main{max-width:900px; margin:0 auto; padding:56px 24px 80px;}
+
+  .badge{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 16px; border-radius:999px;
+    background:#fff; border:1px solid rgba(200,148,56,0.35);
+    color:var(--gold); font-size:12px; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.14em;
+    box-shadow:0 1px 2px rgba(27,42,58,0.05);
+    margin-bottom:20px;
+  }
+  .badge svg{width:14px; height:14px;}
+
+  h1.title{
+    font-size:clamp(30px,5vw,46px);
+    font-weight:700;
+    line-height:1.15;
+    color:var(--text-main);
+    margin:0 0 14px;
+  }
+  h1.title em{
+    font-style:normal;
+    color:var(--gold-dark);
+  }
+  p.lead{
+    font-size:16px; line-height:1.7; color:var(--text-muted);
+    max-width:640px; margin:0 0 40px;
+  }
+
+  .policy-card{
+    background:var(--bg-card);
+    border:1px solid rgba(200,148,56,0.2);
+    border-radius:24px;
+    padding:clamp(24px,5vw,52px);
+    box-shadow:0 20px 60px rgba(27,42,58,0.08);
+    position:relative;
+    overflow:hidden;
+  }
+  .policy-card::before{
+    content:'';
+    position:absolute; top:0; left:0; right:0; height:6px;
+    background:linear-gradient(90deg,var(--gold-dark),var(--gold-light),var(--gold-dark));
+  }
+  .policy-card h2{
+    font-size:clamp(22px,3.4vw,28px);
+    font-weight:700;
+    color:var(--text-main);
+    margin:0 0 28px;
+    padding-bottom:18px;
+    border-bottom:1px solid rgba(200,148,56,0.2);
+  }
+
+  ul.policy-list{
+    list-style:none; margin:0; padding:0;
+    display:flex; flex-direction:column; gap:18px;
+  }
+  ul.policy-list li{
+    display:flex; align-items:flex-start; gap:14px;
+    font-size:15.5px; line-height:1.65; color:var(--text-main);
+  }
+  ul.policy-list li .icon{
+    flex:0 0 auto;
+    width:28px; height:28px; border-radius:9px;
+    background:var(--bg-light);
+    border:1px solid rgba(200,148,56,0.35);
+    display:flex; align-items:center; justify-content:center;
+    margin-top:1px;
+  }
+  ul.policy-list li .icon svg{width:15px; height:15px; color:var(--gold-dark);}
+
+  .signature{
+    margin-top:44px; padding-top:28px;
+    border-top:1px dashed rgba(200,148,56,0.35);
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:16px;
+  }
+  .signature .date{
+    font-size:13px; color:var(--text-muted); font-weight:600;
+  }
+  .signature .who{
+    text-align:right;
+  }
+  .signature .who .name{
+    font-family:'Fraunces',serif;
+    font-size:20px; font-weight:700; color:var(--text-main);
+  }
+  .signature .who .role{
+    font-size:11px; font-weight:700; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--gold-dark);
+  }
+
+  .actions{
+    margin-top:32px;
+    display:flex; flex-wrap:wrap; gap:12px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:12px 22px; border-radius:12px;
+    font-size:14px; font-weight:700;
+    cursor:pointer; border:none;
+    transition:all .25s ease;
+  }
+  .btn svg{width:16px; height:16px;}
+  .btn-primary{
+    background:linear-gradient(135deg,var(--navy),#2A3E52);
+    color:#fff;
+    box-shadow:0 8px 20px rgba(27,42,58,0.25);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 26px rgba(27,42,58,0.3);}
+  .btn-ghost{
+    background:#fff; color:var(--text-main);
+    border:1px solid rgba(200,148,56,0.35);
+  }
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold-dark);}
+
+  footer.page-footer{
+    max-width:900px; margin:0 auto; padding:0 24px 40px;
+    text-align:center;
+    font-size:12px; color:var(--text-muted);
+  }
+
+  @media print{
+    .topbar,.actions{display:none;}
+    body{background:#fff;}
+    .policy-card{box-shadow:none; border:none;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/">
+        <img src="/logo.png" alt="MUTLUKAL" />
+        <span>MUTLUKAL</span>
+      </a>
+      <a class="back-link" href="/#sertifikalar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Sertifikalarımıza Dön
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.2 21 12 17.77 5.8 21 7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+      <span>Kalite &amp; Gıda Güvenliği</span>
+    </div>
+
+    <h1 class="title">Kalite ve Gıda Güvenliği<br/>Yönetim Sistemi <em>Politikamız</em></h1>
+    <p class="lead">
+      MUTLUKAL GIDA olarak; hijyenik, güvenilir ve yasalara tam uyumlu üretim anlayışımızı
+      tüm iş süreçlerimizde yaşatan, imzalı kalite politikamız aşağıda yer almaktadır.
+    </p>
+
+    <div class="policy-card">
+      <h2>Politika Maddelerimiz</h2>
+      <ul class="policy-list">
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Hijyenik, uygun kalitede, gıda güvenliği ve kalite kültürü ilkelerimiz doğrultusunda, yasal, özgün, helal ve sağlıklı ürünler üretmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Ulusal ve uluslararası standart ve mevzuatlara uymak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Tesisin gıda güvenliği ve kalite kültürünü sürekli iyileştirmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Eğitimli çalışanlarımızla birlikte, teknolojik gelişmeyi yakından takip ederek, sürekli gelişme bilinciyle güvenilir, dürüst, planlı, zamanında, istenen kalitede ürünler üretmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Açık ve etkili iletişim kanalları oluşturarak çalışanlarımızın sistemimize geri bildirim ve katılımlarını sağlamak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Kalite ve müşteri odaklı çalışma prensipleri ile müşteri memnuniyetini ön planda tutmak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Çalışanlarımızın eğitimleri ile gıda güvenliği ve kalite kültürünün kuruluşumuzun tüm iç taraflarında etkinliğini sağlamak ve müşteri memnuniyeti odaklı çalışmak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Gıda güvenliği ve kalite kültürü ile ilgili konularda, gıda zincirinde yer alan tedarikçi, müşteri ve ilgili birimler ile etkin bir iletişim kurmak ve sürdürülmesini sağlamak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Kalite ve gıda güvenliği sistemlerimizi sürekli iyileştirmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Tüketicilerin güvenle tercih ettiği, yasalara uygun hijyenik koşullarda ürün geliştirmek ve üretmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Kalite kriterlerine ve standartlara uygun, insan sağlığını tehlikeye sokmayacak ürünlerin üretilmesini ve müşteriye sunulmasını sağlamak,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Şirket markasını ulusal tanınır ve tercih edilir bir marka haline getirmek,</span>
+        </li>
+        <li>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span>
+          <span>Şirketi uluslararası arenada tanınır ve rağbet edilir bir hale getirmektir.</span>
+        </li>
+      </ul>
+
+      <div class="signature">
+        <div class="date">Yayın Tarihi: 03.06.2024 &nbsp;·&nbsp; Rev. No: 01</div>
+        <div class="who">
+          <div class="name">Özkan Akdoğan</div>
+          <div class="role">Genel Müdür</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="/EVRAK/Kalite%20ve%20G%C4%B1da%20G%C3%BCvenli%C4%9Fi%20Politikas%C4%B1%20R01.doc" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+        Orijinal Belgeyi İndir (.doc)
+      </a>
+      <a class="btn btn-ghost" href="/#sertifikalar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Tüm Sertifikalara Dön
+      </a>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    © 2026 MUTLUKAL GIDA — Bu belge, kuruluşumuzun kalite yönetim sistemi kapsamında yayınlanmıştır.
+  </footer>
+
+</body>
+</html>

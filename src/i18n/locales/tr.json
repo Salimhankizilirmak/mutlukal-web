@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünlerimiz",
+    "certifications": "Sertifikalar",
+    "contact": "İletişim",
+    "corporate": "Kurumsal",
+    "quality": "Endüstriyel Kalite",
+    "events": "Etkinlikler",
+    "ads": "Reklamlarımız",
+    "careers": "Bize Katılın",
+    "social": "Sosyal Medya",
+    "phone": "(0364) 254 90 54",
+    "offerButton": "Teklif Alın",
+    "offerButtonMobile": "Toptan Teklif Alın"
+  },
+  "hero": {
+    "badge": "Türkiye'nin Öncü Tortilla Üreticilerinden",
+    "titlePrefix": "Kalitenin Simgesi:",
+    "titleHighlight": "Mutlukal Tortillas",
+    "subtitle": "Ürettiğimiz unlu mamulleri sofranıza ve işletmenize ulaştırıyoruz.",
+    "ctaExplore": "Ürünlerimizi Keşfedin",
+    "ctaOrder": "Toptan Sipariş & Teklif",
+    "scrollDown": "Aşağı Kaydırın",
+    "hygieneBadge": "Endüstriyel Güç & Hijyen",
+    "hygieneTitle": "Hijyenik Üretim Hatlarımız",
+    "hygieneDesc": "Üretim hatlarımızda hijyen standartlarına özenle uyuyor, paketlemeyi uzman ekibimizle gerçekleştiriyoruz.",
+    "statCapacityValue": "1.000.000+",
+    "statCapacityLabel": "Günlük Üretim Kapasitesi",
+    "statIsoValue": "ISO 22000",
+    "statIsoLabel": "Gıda Güvenliği Standartı",
+    "wheatBadge": "Doğal & Besleyici",
+    "wheatTitle": "Anadolu Buğdayından Özel Un Karışımı",
+    "wheatDesc": "Özel harman un karışımımızı restoran ve marketler için üretiyoruz.",
+    "halalBadge": "%100 Helal Sertifikalı Üretim"
+  },
+  "quality": {
+    "eyebrow": "ÜRETİM STANDARTLARIMIZ",
+    "title": "Endüstriyel Üretim & Kalite",
+    "subtitle": "Gıda sektöründeki tecrübemiz ve güncel üretim teknolojilerimizle kaliteli tortilla üretmeye özen gösteriyoruz.",
+    "cards": [
+      {
+        "title": "Hijyenik Üretim",
+        "subtitle": "Hijyen & Otomasyon",
+        "description": "Üretim hatlarımızda hijyen standartlarına özenle uyuyoruz; paketleme uzman ekibimizce gerçekleştirilir.",
+        "highlights": ["24/7 Kesintisiz Hat", "Uzman Ekip Kontrolü"]
+      },
+      {
+        "title": "Yüksek Kalite Un",
+        "subtitle": "Özel Anadolu Harmanı",
+        "description": "Özel seçilmiş yüksek proteinli buğday unlarıyla hazırlanan hamur formülümüzle üretim yapıyoruz.",
+        "highlights": ["Kaliteli Hammadde", "Doğal Lezzet & Koku"]
+      },
+      {
+        "title": "Global Dağıtım",
+        "subtitle": "Lojistik & Dağıtım",
+        "description": "Lojistik ağımızla Türkiye'nin 81 iline ve dünya çapında 20'den fazla ülkeye güvenle ulaştırıyoruz.",
+        "highlights": ["Düzenli Sevkiyat", "20+ İhracat Ülkesi", "Zamanında Teslimat"]
+      }
+    ],
+    "statCountriesValue": "20+",
+    "statCountriesLabel": "İhracat Ülkesi",
+    "statAutomationValue": "24/7",
+    "statAutomationLabel": "Otomasyon Operasyon"
+  },
+  "export": {
+    "eyebrow": "KÜRESEL TEDARİK & LOJİSTİK AĞIMIZ",
+    "titlePrefix": "20+ Ülkeye",
+    "titleHighlight": "Mutlukal Lezzeti",
+    "subtitle": "Lojistik ağımız ve kalite sertifikalarımızla ihracat pazarlarımızı genişletiyoruz.",
+    "stats": [
+      { "value": "20+", "label": "İhracat Ülkesi", "desc": "Avrupa, Orta Doğu, Balkanlar ve BDT ülkelerine düzenli lojistik." },
+      { "value": "%100", "label": "Yerli Üretim", "desc": "%100 milli sermaye, yüksek kaliteli Anadolu buğday unu." },
+      { "value": "50M+", "label": "Yıllık Tortilla Üretimi", "desc": "Zincir restoran ve marketler için düzenli üretim kapasitesi." }
+    ],
+    "regionsEyebrow": "KÜRESEL HİZMET BÖLGELERİ",
+    "regionsTitle": "Kurumsal Dağıtım & İhracat Pazarlarımız",
+    "distributorCta": "Uluslararası Distribütörlük İste",
+    "pillars": [
+      { "region": "Avrupa & Schengen", "detail": "Bölge genelinde düzenli lojistik hatları ve hızlı teslimat ağı." },
+      { "region": "Orta Doğu & Körfez", "detail": "Bölgesel gıda hijyen standartlarına tam uyumlu tedarik." },
+      { "region": "Balkanlar & BDT", "detail": "Genişleyen bölgesel dağıtım ağımızla düzenli sevkiyat." },
+      { "region": "Kuzey Amerika", "detail": "Uluslararası restoran markaları için Private Label ihracatı." }
+    ]
+  },
+  "products": {
+    "eyebrow": "ENDÜSTRİYEL ÜRÜN GAMIMIZ",
+    "title": "Ürünlerimiz",
+    "subtitle": "Tedarik ağımız için ürettiğimiz 4 temel ürün grubumuzu inceleyin.",
+    "tabs": { "all": "Tüm Ürünler", "sade": "Sade Tortilla", "tambugday": "Tam Buğday", "aromali": "Çeşnili Tortilla", "pizza": "Pizza Tabanı" },
+    "sizesLabel": "Üretim Ebatları:",
+    "specButton": "Spesifikasyon Detaylarını İncele",
+    "items": [
+      {
+        "badge": "En Çok Satan",
+        "subtitle": "Klasik Unlu Mamul Serisi",
+        "title": "Sade Tortilla",
+        "description": "Kafe, restoran ve dürüm işletmeleri için ürettiğimiz yüksek kaliteli sade tortilla.",
+        "features": ["Tost makinesinde ve fırında altın sarısı kızarma", "HoReCa & perakende paket ambalaj seçenekleri"]
+      },
+      {
+        "badge": "Kepekli & Diyet",
+        "subtitle": "Yüksek Lifli & Kepekli Seri",
+        "title": "Tam Buğday Tortilla",
+        "description": "Doğal kepekli ve tam buğday unundan hazırlanan, zengin lif içeriğine sahip, besleyici ve diyet menüler için özel tercih edilen tortilla.",
+        "features": ["Zengin doğal buğday lifi kaynağı", "Düşük glisemik indeks ile uzun süre tok tutar", "Fitness ve sağlıklı yaşam konseptlerine uygun"]
+      },
+      {
+        "badge": "Özel Reçete",
+        "subtitle": "Sebze & Çeşni Katkılı Özel Seri",
+        "title": "Domatesli / Ispanaklı / Peynirli Tortilla",
+        "description": "Gerçek domates, taze ıspanak ve zengin peynir katkılarıyla renklenen, premium sunumlar ve özel sandviçler için geliştirilmiş seri.",
+        "features": ["Doğal içerik ile canlı renk ve hoş lezzet", "Wraps ve özel sandviçler için renkli seçenek", "Restoran menülerinde tercih edilir"]
+      },
+      {
+        "badge": "Hızlı Servis Seri",
+        "subtitle": "Ön Pişirilmiş Pizza Tabanı",
+        "title": "Pizza Tabanı",
+        "description": "Mayalanmış hamurdan özel fırınlarda yarı pişirilmiş, zaman ve işçilik tasarrufu sağlayan, çıtır kenarlı profesyonel pizza tabanları.",
+        "features": ["Ön pişirilmiş, dakikalar içinde servise hazır", "Çıtır kenar ve dengeli gözenekli iç yapı", "İşletmeler için düşük fire ve öngörülebilir maliyet"]
+      }
+    ],
+    "ctaTitle": "Özel Ebat veya Private Label Üretim mi İstiyorsunuz?",
+    "ctaDesc": "Markanıza özel reçete, gramaj, ambalaj tasarımı ve özel çapta üretim yapıyoruz.",
+    "ctaButton": "Özel Teklif İste"
+  },
+  "catalog": {
+    "eyebrow": "AMBALAJ & ÜRÜN GALERİSİ",
+    "title": "Ürün Ambalaj Galerimiz",
+    "subtitle": "Görsellere tıklayarak her ürünün boyut, paket içi adet ve gramaj bilgilerini inceleyebilirsiniz.",
+    "pdfLabel": "PDF SPESİFİKASYON",
+    "pdfButton": "E-Katalog İndir (PDF)",
+    "downloadAlert": "Kurumsal Teknik Ürün & Spesifikasyon Kataloğu (PDF) indiriliyor...",
+    "galleryTitle": "Ürün Ambalaj & Çeşit Görselleri",
+    "gallerySubtitle": "Görsellerin üzerine tıklayarak büyüteç merceği ile ambalaj detaylarını ve ürün ölçülerini inceleyebilirsiniz.",
+    "zoomHint": "Büyüteç İle İncele",
+    "modalEyebrow": "AMBALAJ & DOKU İNCELEME MODU",
+    "close": "Kapat (✕)",
+    "specsLabel": "Ambalaj & Paketleme Bilgileri",
+    "diameterLabel": "Boyut / Çap",
+    "packOptionsLabel": "Paket İçi Seçenekleri (Adet · Gramaj)",
+    "packOptionsHint": "Koli içi paket adedi seçilen ambalaj boyutuna göre değişkenlik gösterir; sipariş miktarınıza en uygun ambalaj seçeneğini birlikte belirleyelim.",
+    "magnifierHint": "Soldaki görselin üzerinde farenizi gezdirerek ambalaj baskısını yakından inceleyin.",
+    "tipText": "Ambalaj üzerindeki besin değerleri ve etiket bilgilerini farenizle yakından görebilirsiniz.",
+    "requestButton": "Toptan Fiyat & Numune Talebi Alın",
+    "items": [
+      { "title": "Sade Unlu Tortilla (25cm)", "category": "Unlu Mamul Çeşidi" },
+      { "title": "Domatesli Tortilla (25cm)", "category": "Domatesli Çeşit" },
+      { "title": "Ispanaklı Tortilla (25cm)", "category": "Ispanaklı Çeşit" },
+      { "title": "Peynirli Tortilla (25cm)", "category": "Peynirli Çeşit" },
+      { "title": "Tam Buğday Tortilla (25cm)", "category": "Yüksek Lifli Çeşit" },
+      { "title": "Pizza Tabanı (26cm)", "category": "Ön Pişirilmiş Çeşit" },
+      { "title": "Proteinli Tortilla (20cm)", "category": "Proteinli Çeşit" },
+      { "title": "Sade Unlu Tortilla (15cm Mini)", "category": "Mini Boy Çeşit" }
+    ]
+  },
+  "certifications": {
+    "eyebrow": "KALİTE & DÜNYA STANDARTLARI",
+    "title": "Sertifikalarımız ve Kalite Belgelerimiz",
+    "subtitle": "Mutlukal Gıda olarak gıda mevzuatlarına uyum sağlıyor ve bağımsız akredite kurumlarca denetleniyoruz.",
+    "activeLabel": "Aktif & Akredite Belgeli",
+    "viewLabel": "Görüntüle",
+    "docs": [
+      { "code": "ISO 22000:2018", "title": "Gıda Güvenliği Yönetim Sistemi", "desc": "Hammadde kabulünden sevkiyata kadar tüm süreçlerde uluslararası risk analizi ve kritik kontrol noktaları denetimi." },
+      { "code": "ISO 9001:2015", "title": "Kalite Yönetim Sistemi", "desc": "Süreç odaklı yaklaşım ile kurumsal kalite standartlarının tüm departmanlarda uygulandığını gösteren sertifikasyon." },
+      { "code": "FSSC 22000", "title": "Global Gıda Güvenliği Belgesi", "desc": "Dünya çapında zincir hipermarket ve uluslararası restoran ağlarına tedarik yetkisi sağlayan üst düzey sertifikasyon." },
+      { "code": "SEDEX (SMETA)", "title": "Sosyal Uygunluk Denetimi", "desc": "Çalışan hakları, iş sağlığı ve etik ticaret ilkelerine bağımsız denetim kuruluşlarınca onaylanmış tam uyum belgesi." },
+      { "code": "TSE UYGUNLUK", "title": "Türk Standartlarına Uygunluk", "desc": "Türk Standartları Enstitüsü tarafından denetlenen üretim süreçlerine ve ürün kalitesine tam uygunluk belgesi." },
+      { "code": "HELAL SERTİFİKASI", "title": "Tortillas Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." },
+      { "code": "HELAL SERTİFİKASI", "title": "Tortillove Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." },
+      { "code": "HELAL SERTİFİKASI", "title": "Happylla Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." }
+    ],
+    "featuredEyebrow": "Öne Çıkan Belge · Ayrı Sekmede Açılır",
+    "featuredTitle": "Kalite ve Gıda Güvenliği Yönetim Sistemi Politikamız",
+    "featuredDesc": "Genel Müdürümüz tarafından imzalanan, kuruluşumuzun tüm kalite ve gıda güvenliği taahhütlerini içeren resmi politika metnimizi okuyun.",
+    "featuredButton": "Politikayı Görüntüle"
+  },
+  "social": {
+    "eyebrow": "SOSYAL MEDYA",
+    "title": "Bizi Sosyal Medyada Takip Edin",
+    "subtitle": "Üretim kulisimizden kampanyalara, ihracat haberlerinden yeni ürünlere kadar tüm gelişmeler sosyal medya hesaplarımızda.",
+    "disclaimer": "Örnek gönderiler — güncel paylaşımlar için hesaplarımızı takip edin.",
+    "viewAll": "Tüm Gönderileri Görün",
+    "fbShare": "Paylaş",
+    "igLikes": "beğenme",
+    "xPosts": [
+      { "time": "2s", "text": "Yeni ürünümüz Proteinli Tortilla artık raflarda! 💪🌯" },
+      { "time": "5g", "text": "20'den fazla ülkeye ihracata devam ediyoruz. 🌍" }
+    ],
+    "fbPosts": [
+      { "time": "3 saat", "text": "Kalite ve gıda güvenliği, işimizin her adımında önceliğimiz. ✅" },
+      { "time": "1 gün", "text": "Fuarlarda buluşuyoruz, standımızı ziyaret edin! 🎪" }
+    ],
+    "igPosts": [
+      { "text": "Üretim hattımızdan bir kare 🏭 #mutlukal #tortilla" },
+      { "text": "Ekibimize yeni yüzler katılıyor — bize katılın! 🤝" }
+    ]
+  },
+  "footer": {
+    "description": "Çorum'daki tesisimizde tortilla ve pizza tabanı üreten bir gıda markasıyız.",
+    "factoryTitle": "Fabrikamızı Ziyaret Edin",
+    "factoryDesc": "Üretim tesisimizi tanıtım videomuzdan izleyebilir, haritadan konumumuzu bulabilirsiniz.",
+    "quickAccess": "Hızlı Erişim",
+    "links": { "home": "Ana Sayfa", "quality": "Endüstriyel Kalite", "products": "Ürün Portföyü", "catalog": "E-Katalog & Spesifikasyon", "certifications": "Sertifikalarımız", "offer": "Toptan Teklif Alın" },
+    "productLines": "Ürün Gruplarımız",
+    "productLineItems": ["Sade Tortilla", "Tam Buğday Tortilla", "Çeşnili Tortilla", "Pizza Tabanı", "Private Label Üretim"],
+    "contactTitle": "İletişim & Fabrika",
+    "addressLabel": "Adres:",
+    "address": "Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum",
+    "phoneLabel": "Telefon:",
+    "email": "info@mutlukal.com.tr",
+    "copyright": "© {{year}} Mutlukal. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK Aydınlatma Metni"
+  },
+  "contactModal": {
+    "eyebrow": "TOPTAN KANAL & TEDARİK",
+    "title": "Toptan Fiyat & Numune Talebi",
+    "successTitle": "Talebiniz Alındı!",
+    "successDesc": "Müşteri temsilcimiz en kısa sürede firmanızla iletişime geçerek özel toptan fiyat kataloğumuzu paylaşacaktır.",
+    "nameLabel": "Ad Soyad *",
+    "namePlaceholder": "Ahmet Yılmaz",
+    "companyLabel": "Firma Adı *",
+    "companyPlaceholder": "Gıda A.Ş.",
+    "emailLabel": "E-posta *",
+    "emailPlaceholder": "info@firma.com",
+    "phoneLabel": "Telefon *",
+    "phonePlaceholder": "+90 (555) 000 00 00",
+    "productLabel": "İlgilenilen Ürün Grubu",
+    "productOptions": { "tortilla": "Tortilla (Sade / Kepekli)", "cesnili": "Çeşnili Tortilla", "pizza": "Pizza Tabanı", "ozel": "Private Label / Özel Reçete" },
+    "messageLabel": "Açıklama & Aylık Hacim Talebi",
+    "messagePlaceholder": "Tahmini aylık koli/kutu talebiniz veya özel istekleriniz...",
+    "submitButton": "Teklif & Numune Talebini Gönder"
+  },
+  "productModal": {
+    "magnifierTitle": "Büyüteç İle Ambalaj İnceleme",
+    "magnifierHint": "Soldaki ambalajın üzerine farenizi getirerek detayları büyüteçle görüntüleyin.",
+    "techSpecs": "Teknik Özellikler",
+    "diametersLabel": "Mevcut Çaplar",
+    "packCapacityLabel": "Paket / Koli Kapasitesi",
+    "featuresTitle": "Öne Çıkan Avantajlar",
+    "close": "Kapat",
+    "offerButton": "Toptan Fiyat Alın"
+  },
+  "preloader": {
+    "title": "Deneyimi Yükleniyor",
+    "subtitle": "155 kare ultra yüksek çözünürlüklü scroll animasyonu hazırlanıyor...",
+    "frameLabel": "Kare:",
+    "readyText": "Hazır! Giriş yapılıyor..."
+  }
+}

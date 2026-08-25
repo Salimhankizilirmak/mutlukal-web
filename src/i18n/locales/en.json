@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "corporate": "Corporate",
+    "quality": "Industrial Quality",
+    "events": "Events",
+    "ads": "Ad Videos",
+    "careers": "Careers",
+    "social": "Social Media",
+    "phone": "(0364) 254 90 54",
+    "offerButton": "Get a Quote",
+    "offerButtonMobile": "Request Wholesale Quote"
+  },
+  "hero": {
+    "badge": "One of Turkey's Leading Tortilla Producers",
+    "titlePrefix": "A Mark of Quality:",
+    "titleHighlight": "Mutlukal Tortillas",
+    "subtitle": "We deliver our flour products to your table and your business.",
+    "ctaExplore": "Explore Our Products",
+    "ctaOrder": "Wholesale Order & Quote",
+    "scrollDown": "Scroll Down",
+    "hygieneBadge": "Industrial Strength & Hygiene",
+    "hygieneTitle": "Hygienic Production Lines",
+    "hygieneDesc": "Our production lines follow strict hygiene standards; packaging is carried out carefully by our team.",
+    "statCapacityValue": "1,000,000+",
+    "statCapacityLabel": "Daily Production Capacity",
+    "statIsoValue": "ISO 22000",
+    "statIsoLabel": "Food Safety Standard",
+    "wheatBadge": "Natural & Nourishing",
+    "wheatTitle": "A Special Flour Blend from Anatolian Wheat",
+    "wheatDesc": "We produce our special flour blend for restaurants and markets.",
+    "halalBadge": "100% Halal Certified Production"
+  },
+  "quality": {
+    "eyebrow": "OUR PRODUCTION STANDARDS",
+    "title": "Industrial Production & Quality",
+    "subtitle": "With our experience in the food industry and current production technology, we take care to produce quality tortillas.",
+    "cards": [
+      {
+        "title": "Hygienic Production",
+        "subtitle": "Hygiene & Automation",
+        "description": "Our production lines follow strict hygiene standards; packaging is carried out carefully by our expert team.",
+        "highlights": ["24/7 Uninterrupted Line", "Expert Team Oversight"]
+      },
+      {
+        "title": "High-Quality Flour",
+        "subtitle": "Special Anatolian Blend",
+        "description": "Our dough formula is made with specially selected high-protein wheat flours.",
+        "highlights": ["Quality Raw Materials", "Natural Taste & Aroma"]
+      },
+      {
+        "title": "Nationwide & Export Distribution",
+        "subtitle": "Logistics & Distribution",
+        "description": "Through our logistics network, we deliver reliably to all 81 provinces of Turkey and to more than 20 countries worldwide.",
+        "highlights": ["Regular Shipments", "20+ Export Countries", "On-Time Delivery"]
+      }
+    ],
+    "statCountriesValue": "20+",
+    "statCountriesLabel": "Export Countries",
+    "statAutomationValue": "24/7",
+    "statAutomationLabel": "Automated Operation"
+  },
+  "export": {
+    "eyebrow": "OUR GLOBAL SUPPLY & LOGISTICS NETWORK",
+    "titlePrefix": "Mutlukal Flavor to",
+    "titleHighlight": "20+ Countries",
+    "subtitle": "We are expanding our export markets with our logistics network and quality certifications.",
+    "stats": [
+      { "value": "20+", "label": "Export Countries", "desc": "Regular logistics to Europe, the Middle East, the Balkans and the CIS." },
+      { "value": "100%", "label": "Domestic Production", "desc": "100% domestic capital, high-quality Anatolian wheat flour." },
+      { "value": "50M+", "label": "Annual Tortilla Production", "desc": "Regular production capacity for chain restaurants and markets." }
+    ],
+    "regionsEyebrow": "GLOBAL SERVICE REGIONS",
+    "regionsTitle": "Our Corporate Distribution & Export Markets",
+    "distributorCta": "Request International Distributorship",
+    "pillars": [
+      { "region": "Europe & Schengen", "detail": "Regular logistics routes and a fast delivery network across the region." },
+      { "region": "Middle East & Gulf", "detail": "Full compliance with regional food hygiene standards." },
+      { "region": "Balkans & CIS", "detail": "Regular shipments through our growing regional distribution network." },
+      { "region": "North America", "detail": "Private Label exports for international restaurant brands." }
+    ]
+  },
+  "products": {
+    "eyebrow": "OUR INDUSTRIAL PRODUCT RANGE",
+    "title": "Our Products",
+    "subtitle": "Explore the 4 core product groups we manufacture for our supply network.",
+    "tabs": { "all": "All Products", "sade": "Plain Tortilla", "tambugday": "Whole Wheat", "aromali": "Flavored Tortilla", "pizza": "Pizza Base" },
+    "sizesLabel": "Production Sizes:",
+    "specButton": "View Specification Details",
+    "items": [
+      {
+        "badge": "Best Seller",
+        "subtitle": "Classic Flour Product Series",
+        "title": "Plain Tortilla",
+        "description": "A high-quality plain tortilla made for cafés, restaurants and wrap businesses.",
+        "features": ["Toasts to a golden brown in a press or oven", "HoReCa & retail packaging options"]
+      },
+      {
+        "badge": "Whole Wheat & Diet",
+        "subtitle": "High-Fiber Whole Wheat Series",
+        "title": "Whole Wheat Tortilla",
+        "description": "Made with natural whole wheat flour, rich in fiber and specially preferred for nutritious, diet-friendly menus.",
+        "features": ["A rich source of natural wheat fiber", "Low glycemic index keeps you full longer", "Suited to fitness and healthy-living concepts"]
+      },
+      {
+        "badge": "Special Recipe",
+        "subtitle": "Special Series with Vegetable & Flavor Additions",
+        "title": "Tomato / Spinach / Cheese Tortilla",
+        "description": "A series developed for premium presentations and specialty sandwiches, colored with real tomato, fresh spinach and rich cheese additions.",
+        "features": ["Vibrant color and pleasant taste from natural ingredients", "A colorful option for wraps and specialty sandwiches", "A popular choice on restaurant menus"]
+      },
+      {
+        "badge": "Quick Service Series",
+        "subtitle": "Pre-Baked Pizza Base",
+        "title": "Pizza Base",
+        "description": "Professional, crispy-edged pizza bases, par-baked from leavened dough in special ovens to save time and labor.",
+        "features": ["Par-baked, ready to serve in minutes", "Crispy edge with an evenly porous interior", "Low waste and predictable cost for businesses"]
+      }
+    ],
+    "ctaTitle": "Looking for Custom Sizing or Private Label Production?",
+    "ctaDesc": "We produce custom recipes, weights, packaging designs and diameters for your brand.",
+    "ctaButton": "Request a Custom Quote"
+  },
+  "catalog": {
+    "eyebrow": "PACKAGING & PRODUCT GALLERY",
+    "title": "Our Product Packaging Gallery",
+    "subtitle": "Click on an image to see each product's size, pack count and weight information.",
+    "pdfLabel": "PDF SPECIFICATION",
+    "pdfButton": "Download E-Catalog (PDF)",
+    "downloadAlert": "Downloading the corporate technical product & specification catalog (PDF)...",
+    "galleryTitle": "Product Packaging & Variety Images",
+    "gallerySubtitle": "Click on the images to examine packaging details and product measurements with the magnifier lens.",
+    "zoomHint": "Inspect With Magnifier",
+    "modalEyebrow": "PACKAGING & TEXTURE INSPECTION MODE",
+    "close": "Close (✕)",
+    "specsLabel": "Packaging Information",
+    "diameterLabel": "Size / Diameter",
+    "packOptionsLabel": "Pack Size Options (Count · Weight)",
+    "packOptionsHint": "The number of packs per box varies by the packaging size selected; let's determine the packaging option best suited to your order quantity together.",
+    "magnifierHint": "Hover over the image on the left to inspect the packaging print up close.",
+    "tipText": "You can view the nutrition facts and label information on the packaging up close with your mouse.",
+    "requestButton": "Request Wholesale Pricing & Samples",
+    "items": [
+      { "title": "Plain Tortilla (25cm)", "category": "Flour Product Variety" },
+      { "title": "Tomato Tortilla (25cm)", "category": "Tomato Variety" },
+      { "title": "Spinach Tortilla (25cm)", "category": "Spinach Variety" },
+      { "title": "Cheese Tortilla (25cm)", "category": "Cheese Variety" },
+      { "title": "Whole Wheat Tortilla (25cm)", "category": "High-Fiber Variety" },
+      { "title": "Pizza Base (26cm)", "category": "Par-Baked Variety" },
+      { "title": "Protein Tortilla (20cm)", "category": "Protein Variety" },
+      { "title": "Plain Tortilla (15cm Mini)", "category": "Mini Size Variety" }
+    ]
+  },
+  "certifications": {
+    "eyebrow": "QUALITY & WORLD STANDARDS",
+    "title": "Our Certifications & Quality Documents",
+    "subtitle": "As Mutlukal Gıda, we comply with food regulations and are audited by independent accredited bodies.",
+    "activeLabel": "Active & Accredited",
+    "viewLabel": "View",
+    "docs": [
+      { "code": "ISO 22000:2018", "title": "Food Safety Management System", "desc": "International risk analysis and critical control point auditing across all processes, from raw material intake to shipment." },
+      { "code": "ISO 9001:2015", "title": "Quality Management System", "desc": "Certification showing a process-oriented approach to quality standards applied across all corporate departments." },
+      { "code": "FSSC 22000", "title": "Global Food Safety Certificate", "desc": "A top-tier certification enabling supply authorization to chain hypermarkets and international restaurant networks worldwide." },
+      { "code": "SEDEX (SMETA)", "title": "Social Compliance Audit", "desc": "A full-compliance document approved by independent audit bodies for worker rights, occupational health and ethical trade principles." },
+      { "code": "TSE COMPLIANCE", "title": "Turkish Standards Compliance", "desc": "A document of full compliance for production processes and product quality, audited by the Turkish Standards Institute." },
+      { "code": "HALAL CERTIFICATE", "title": "Tortillas Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." },
+      { "code": "HALAL CERTIFICATE", "title": "Tortillove Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." },
+      { "code": "HALAL CERTIFICATE", "title": "Happylla Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." }
+    ],
+    "featuredEyebrow": "Featured Document · Opens in a New Tab",
+    "featuredTitle": "Our Quality & Food Safety Management System Policy",
+    "featuredDesc": "Read our official policy statement, signed by our General Manager, covering all of our quality and food safety commitments.",
+    "featuredButton": "View the Policy"
+  },
+  "social": {
+    "eyebrow": "SOCIAL MEDIA",
+    "title": "Follow Us on Social Media",
+    "subtitle": "From behind-the-scenes production to campaigns, export news to new products — all updates on our social media accounts.",
+    "disclaimer": "Sample posts — follow our accounts for the latest updates.",
+    "viewAll": "See All Posts",
+    "fbShare": "Share",
+    "igLikes": "likes",
+    "xPosts": [
+      { "time": "2s", "text": "Our new Protein Tortilla is now on shelves! 💪🌯" },
+      { "time": "5d", "text": "We continue exporting to more than 20 countries. 🌍" }
+    ],
+    "fbPosts": [
+      { "time": "3 hours", "text": "Quality and food safety are our priority at every step. ✅" },
+      { "time": "1 day", "text": "See us at trade fairs — come visit our booth! 🎪" }
+    ],
+    "igPosts": [
+      { "text": "A shot from our production line 🏭 #mutlukal #tortilla" },
+      { "text": "New faces are joining our team — join us too! 🤝" }
+    ]
+  },
+  "footer": {
+    "description": "We are a food brand producing tortillas and pizza bases at our facility in Çorum.",
+    "factoryTitle": "Visit Our Factory",
+    "factoryDesc": "Watch our facility in the video below and find our location on the map.",
+    "quickAccess": "Quick Links",
+    "links": { "home": "Home", "quality": "Industrial Quality", "products": "Product Portfolio", "catalog": "E-Catalog & Specification", "certifications": "Our Certifications", "offer": "Request Wholesale Quote" },
+    "productLines": "Our Product Lines",
+    "productLineItems": ["Plain Tortilla", "Whole Wheat Tortilla", "Flavored Tortilla", "Pizza Base", "Private Label Production"],
+    "contactTitle": "Contact & Factory",
+    "addressLabel": "Address:",
+    "address": "Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum, Türkiye",
+    "phoneLabel": "Phone:",
+    "email": "info@mutlukal.com.tr",
+    "copyright": "© {{year}} Mutlukal. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "kvkk": "Data Protection Notice"
+  },
+  "contactModal": {
+    "eyebrow": "WHOLESALE CHANNEL & SUPPLY",
+    "title": "Wholesale Pricing & Sample Request",
+    "successTitle": "Your Request Has Been Received!",
+    "successDesc": "Our customer representative will contact your company shortly to share our special wholesale price catalog.",
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "John Smith",
+    "companyLabel": "Company Name *",
+    "companyPlaceholder": "Food Co.",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "info@company.com",
+    "phoneLabel": "Phone *",
+    "phonePlaceholder": "+90 (555) 000 00 00",
+    "productLabel": "Product Group of Interest",
+    "productOptions": { "tortilla": "Tortilla (Plain / Whole Wheat)", "cesnili": "Flavored Tortilla", "pizza": "Pizza Base", "ozel": "Private Label / Custom Recipe" },
+    "messageLabel": "Description & Monthly Volume Request",
+    "messagePlaceholder": "Your estimated monthly box/carton demand or special requests...",
+    "submitButton": "Send Quote & Sample Request"
+  },
+  "productModal": {
+    "magnifierTitle": "Inspect Packaging With Magnifier",
+    "magnifierHint": "Hover your mouse over the packaging on the left to view the details with the magnifier.",
+    "techSpecs": "Technical Specifications",
+    "diametersLabel": "Available Diameters",
+    "packCapacityLabel": "Pack / Box Capacity",
+    "featuresTitle": "Key Advantages",
+    "close": "Close",
+    "offerButton": "Get Wholesale Pricing"
+  },
+  "preloader": {
+    "title": "Loading Experience",
+    "subtitle": "Preparing a 155-frame, ultra-high-resolution scroll animation...",
+    "frameLabel": "Frame:",
+    "readyText": "Ready! Loading..."
+  }
+}

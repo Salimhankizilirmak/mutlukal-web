@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-light: #FAF3E3;
+    --color-bg-card: #FFFFFF;
+    --color-text-main: #1B2A3A;
+    --color-text-muted: #5C6B73;
+    --color-gold: #C89438;
+    --color-gold-light: #E2B45F;
+    --color-gold-dark: #B88432;
+    --color-navy: #1B2A3A;
+  }
+
+  body {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAF3E3;
+    color: #1B2A3A;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Unlayered on purpose: Tailwind v4 ships its own `.font-serif` utility in
+   its "utilities" cascade layer, which always wins over anything declared
+   inside `@layer base` no matter the specificity. Declaring these rules
+   outside of any @layer is the only way they reliably override it. */
+h1, h2, h3, .font-serif, .font-serif-luxury {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Arabic (RTL): swap in a proper Arabic typeface everywhere — the Latin
+   display fonts above have no Arabic glyphs, so the browser would
+   otherwise fall back to a generic system font. */
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'Outfit', sans-serif;
+  letter-spacing: 0;
+}
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .font-serif,
+html[dir="rtl"] .font-serif-luxury {
+  font-family: 'Cairo', 'Outfit', sans-serif;
+}
+html[dir="rtl"] .font-mono {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EAD5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C89438;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1B2A3A;
+}
+
+/* Bright Glassmorphism & Card Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 148, 56, 0.25);
+  box-shadow: 0 10px 30px rgba(27, 42, 58, 0.06);
+}
+
+.glass-panel-light {
+  background: rgba(250, 243, 227, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 148, 56, 0.3);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 148, 56, 0.2);
+  box-shadow: 0 15px 35px rgba(27, 42, 58, 0.07);
+}
+
+.glass-card:hover {
+  border-color: rgba(200, 148, 56, 0.5);
+  box-shadow: 0 20px 45px rgba(200, 148, 56, 0.15);
+}
+
+/* Text Gradients */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #1B2A3A 0%, #C89438 60%, #B88432 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-navy {
+  background: linear-gradient(135deg, #0F1923 0%, #1B2A3A 70%, #2A3E52 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
