@@ -11,14 +11,20 @@ export default function ExportSection({ onOpenContact }) {
 
   return (
     <section id="ihracat" className="relative py-12 sm:py-16 min-h-screen flex flex-col justify-center overflow-hidden bg-[#0A1018] text-white">
-      {/* Background Video Element - Full Viewport Cover */}
+      {/* Background Video Element - Full Viewport Cover.
+          The clip is an ultra-wide panorama (~2.35:1); on a tall mobile
+          section (this one grows past 1300px with the stats/pillars below)
+          stretching it with h-full would force a 2x+ upscale past its native
+          resolution and blur badly. Capping the video's own box to a shorter
+          band on mobile keeps it within its native resolution — the dark
+          gradient overlay already fades to solid color beneath it. */}
       <video
         src="/videos/map-export.mp4"
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-90 filter brightness-95 saturate-125"
+        className="absolute inset-x-0 top-0 sm:inset-0 w-full h-[50vh] sm:h-full object-cover z-0 opacity-90 filter brightness-95 saturate-125"
       />
 
       {/* Subtle Vignette Overlay for High Contrast */}
