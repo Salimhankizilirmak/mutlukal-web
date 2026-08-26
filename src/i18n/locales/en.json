@@ -25,13 +25,11 @@
     "hygieneBadge": "Industrial Strength & Hygiene",
     "hygieneTitle": "Hygienic Production Lines",
     "hygieneDesc": "Our production lines follow strict hygiene standards; packaging is carried out carefully by our team.",
-    "statCapacityValue": "1,000,000+",
-    "statCapacityLabel": "Daily Production Capacity",
     "statIsoValue": "ISO 22000",
     "statIsoLabel": "Food Safety Standard",
     "wheatBadge": "Natural & Nourishing",
     "wheatTitle": "A Special Flour Blend from Anatolian Wheat",
-    "wheatDesc": "We produce our special flour blend for restaurants and markets.",
+    "wheatDesc": "We produce our special flour blend for you.",
     "halalBadge": "100% Halal Certified Production"
   },
   "quality": {

@@ -178,12 +178,8 @@ export default function ScrollCanvas({ loadedImages = [], onOpenContact }) {
             {t('hero.hygieneDesc')}
           </p>
 
-          <div className="grid grid-cols-2 gap-4 pt-2">
-            <div className="bg-black/50 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-xl">
-              <span className="block font-bold text-2xl text-[#E2B45F]">{t('hero.statCapacityValue')}</span>
-              <span className="text-xs text-white font-medium">{t('hero.statCapacityLabel')}</span>
-            </div>
-            <div className="bg-black/50 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-xl">
+          <div className="pt-2">
+            <div className="inline-block bg-black/50 backdrop-blur-md p-4 rounded-xl border border-white/20 shadow-xl">
               <span className="block font-bold text-2xl text-[#E2B45F]">{t('hero.statIsoValue')}</span>
               <span className="text-xs text-white font-medium">{t('hero.statIsoLabel')}</span>
             </div>

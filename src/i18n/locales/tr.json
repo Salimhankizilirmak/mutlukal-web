@@ -25,13 +25,11 @@
     "hygieneBadge": "Endüstriyel Güç & Hijyen",
     "hygieneTitle": "Hijyenik Üretim Hatlarımız",
     "hygieneDesc": "Üretim hatlarımızda hijyen standartlarına özenle uyuyor, paketlemeyi uzman ekibimizle gerçekleştiriyoruz.",
-    "statCapacityValue": "1.000.000+",
-    "statCapacityLabel": "Günlük Üretim Kapasitesi",
     "statIsoValue": "ISO 22000",
     "statIsoLabel": "Gıda Güvenliği Standartı",
     "wheatBadge": "Doğal & Besleyici",
     "wheatTitle": "Anadolu Buğdayından Özel Un Karışımı",
-    "wheatDesc": "Özel harman un karışımımızı restoran ve marketler için üretiyoruz.",
+    "wheatDesc": "Özel harman un karışımımızı sizler için üretiyoruz.",
     "halalBadge": "%100 Helal Sertifikalı Üretim"
   },
   "quality": {
