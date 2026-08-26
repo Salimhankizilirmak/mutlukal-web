@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Download, FileText, Box, ChevronRight, Search, Ruler, Package } from 'lucide-react';
+import { FileText, Box, ChevronRight, Search, Ruler, Package } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '../lib/supabaseClient';
 
 // Interactive Magnifier Zoom Lens Component (Photo 2 Style)
@@ -202,39 +202,21 @@ export default function CatalogSpecSection({ onOpenContact }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dbRows, lang]);
 
-  const handleDownloadCatalog = () => {
-    alert(t('catalog.downloadAlert'));
-  };
-
   return (
     <section id="katalog" className="py-24 bg-[#FAF3E3] text-[#1B2A3A] relative border-t border-[#C89438]/25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header & PDF Download CTA */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 border-b border-[#C89438]/20 pb-8">
-          <div>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#C89438]/35 text-[#C89438] text-xs font-bold uppercase tracking-widest mb-4 shadow-sm">
-              <FileText className="w-3.5 h-3.5 text-[#C89438]" />
-              <span>{t('catalog.eyebrow')}</span>
-            </div>
-            <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#1B2A3A] tracking-tight">
-              {t('catalog.title')}
-            </h2>
-            <p className="text-sm sm:text-base text-[#5C6B73] max-w-2xl mt-2 font-medium">
-              {t('catalog.subtitle')}
-            </p>
+        {/* Section Header */}
+        <div className="mb-16 border-b border-[#C89438]/20 pb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#C89438]/35 text-[#C89438] text-xs font-bold uppercase tracking-widest mb-4 shadow-sm">
+            <FileText className="w-3.5 h-3.5 text-[#C89438]" />
+            <span>{t('catalog.eyebrow')}</span>
           </div>
-
-          {/* Download PDF Button */}
-          <button
-            onClick={handleDownloadCatalog}
-            className="px-6 py-4 rounded-2xl bg-gradient-to-r from-[#1B2A3A] via-[#2A3E52] to-[#1B2A3A] text-white font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-3 cursor-pointer shrink-0 border border-[#E2B45F]/40"
-          >
-            <Download className="w-5 h-5 text-[#E2B45F] animate-bounce" />
-            <div className="text-left rtl:text-right">
-              <span className="block text-xs text-[#E2B45F] font-mono">{t('catalog.pdfLabel')}</span>
-              <span className="block font-bold text-sm text-white">{t('catalog.pdfButton')}</span>
-            </div>
-          </button>
+          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#1B2A3A] tracking-tight">
+            {t('catalog.title')}
+          </h2>
+          <p className="text-sm sm:text-base text-[#5C6B73] max-w-2xl mt-2 font-medium">
+            {t('catalog.subtitle')}
+          </p>
         </div>
 
         {/* Product Gallery with Smooth Hover Zoom */}
