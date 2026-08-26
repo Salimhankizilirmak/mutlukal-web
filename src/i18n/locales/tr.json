@@ -37,12 +37,10 @@
     "eyebrow": "HAKKIMIZDA",
     "title": "2007'den Bu Yana Mutlukal Gıda",
     "paragraph1": "Çorum Organize Sanayi Bölgesi'nde 2007 yılından bu yana faaliyet gösteren Mutlukal Gıda, 15.000 m² açık ve 5.000 m² kapalı alana sahip üretim tesisinde Türk Gıda Kodeksi'ne uygun olarak köy tadında lezzetler üretiyor.",
-    "paragraph2": "Üretimimizin yaklaşık %60'ını iç pazarda değerlendiriyor, kalan kısmını Avrupa ve Orta Doğu pazarlarına ihraç ediyoruz; bu üretim gücümüzle 150 kişilik bir istihdam sağlıyoruz.",
+    "paragraph2": "Üretimimizin bir kısmını iç pazarda değerlendiriyor, kalan kısmını Avrupa ve Orta Doğu pazarlarına ihraç ediyoruz.",
     "stats": [
       { "value": "2007", "label": "Kuruluş Yılı" },
-      { "value": "20.000 m²", "label": "Toplam Tesis Alanı" },
-      { "value": "150+", "label": "Çalışan" },
-      { "value": "%60", "label": "İç Pazar Payı" }
+      { "value": "20.000 m²", "label": "Toplam Tesis Alanı" }
     ],
     "missionTitle": "Misyonumuz",
     "missionText": "Müşterilerimize doğal ve kaliteli ürünler sunarak sağlıklı nesillerin yetişmesine katkı sağlamak. Değişen tüketici trendlerine uygun olarak Ar-Ge'den üretim ve satış noktasına kadar yüksek standartlarda yenilikçi ürünleri uygun fiyatlarla tüketicilerimizle buluşturmak ve lezzete herkesin ulaşmasını sağlamak.",

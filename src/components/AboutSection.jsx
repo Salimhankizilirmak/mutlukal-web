@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Building2, Factory, Users, PieChart, Target, Eye } from 'lucide-react';
+import { Building2, Factory, Target, Eye } from 'lucide-react';
 
-const STAT_ICONS = [Building2, Factory, Users, PieChart];
+const STAT_ICONS = [Building2, Factory];
 
 export default function AboutSection() {
   const { t } = useTranslation();
@@ -29,7 +29,7 @@ export default function AboutSection() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-16">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-md mx-auto mb-16">
           {stats.map((s, i) => {
             const Icon = STAT_ICONS[i];
             return (

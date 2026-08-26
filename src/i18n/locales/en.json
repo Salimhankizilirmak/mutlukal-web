@@ -37,12 +37,10 @@
     "eyebrow": "ABOUT US",
     "title": "Mutlukal Gıda Since 2007",
     "paragraph1": "Operating in the Çorum Organized Industrial Zone since 2007, Mutlukal Gıda produces village-style flavors in compliance with the Turkish Food Codex, at a facility spanning 15,000 m² of open and 5,000 m² of covered area.",
-    "paragraph2": "We sell around 60% of our production domestically and export the rest to European and Middle Eastern markets; our production capacity supports employment for 150 people.",
+    "paragraph2": "We sell part of our production domestically and export the rest to European and Middle Eastern markets.",
     "stats": [
       { "value": "2007", "label": "Founded" },
-      { "value": "20,000 m²", "label": "Total Facility Area" },
-      { "value": "150+", "label": "Employees" },
-      { "value": "60%", "label": "Domestic Market Share" }
+      { "value": "20,000 m²", "label": "Total Facility Area" }
     ],
     "missionTitle": "Our Mission",
     "missionText": "To contribute to raising healthy generations by offering our customers natural, quality products. To bring innovative products, developed to high standards from R&D through production and point of sale, to consumers at fair prices — and make great flavor accessible to everyone.",
