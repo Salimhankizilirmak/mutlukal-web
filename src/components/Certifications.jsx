@@ -53,12 +53,9 @@ export default function Certifications() {
                 <span className="text-xs font-mono font-bold text-[#C89438] block mb-1">
                   {doc.code}
                 </span>
-                <h3 className="text-lg font-serif font-bold text-[#1B2A3A] mb-2 group-hover:text-[#C89438] transition-colors">
+                <h3 className="text-lg font-serif font-bold text-[#1B2A3A] mb-4 group-hover:text-[#C89438] transition-colors">
                   {doc.title}
                 </h3>
-                <p className="text-xs text-[#5C6B73] leading-relaxed mb-4">
-                  {doc.desc}
-                </p>
               </div>
 
               <div className="flex items-center justify-between text-[11px] font-bold border-t border-[#C89438]/20 pt-3">

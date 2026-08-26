@@ -48,7 +48,7 @@
       {
         "title": "Yüksek Kalite Un",
         "subtitle": "Özel Anadolu Harmanı",
-        "description": "Özel seçilmiş yüksek proteinli buğday unlarıyla hazırlanan hamur formülümüzle üretim yapıyoruz.",
+        "description": "Kaliteli buğday unlarıyla hazırladığımız hamurla üretim yapıyoruz.",
         "highlights": ["Kaliteli Hammadde", "Doğal Lezzet & Koku"]
       },
       {
@@ -161,14 +161,14 @@
     "activeLabel": "Aktif & Akredite Belgeli",
     "viewLabel": "Görüntüle",
     "docs": [
-      { "code": "ISO 22000:2018", "title": "Gıda Güvenliği Yönetim Sistemi", "desc": "Hammadde kabulünden sevkiyata kadar tüm süreçlerde uluslararası risk analizi ve kritik kontrol noktaları denetimi." },
-      { "code": "ISO 9001:2015", "title": "Kalite Yönetim Sistemi", "desc": "Süreç odaklı yaklaşım ile kurumsal kalite standartlarının tüm departmanlarda uygulandığını gösteren sertifikasyon." },
-      { "code": "FSSC 22000", "title": "Global Gıda Güvenliği Belgesi", "desc": "Dünya çapında zincir hipermarket ve uluslararası restoran ağlarına tedarik yetkisi sağlayan üst düzey sertifikasyon." },
-      { "code": "SEDEX (SMETA)", "title": "Sosyal Uygunluk Denetimi", "desc": "Çalışan hakları, iş sağlığı ve etik ticaret ilkelerine bağımsız denetim kuruluşlarınca onaylanmış tam uyum belgesi." },
-      { "code": "TSE UYGUNLUK", "title": "Türk Standartlarına Uygunluk", "desc": "Türk Standartları Enstitüsü tarafından denetlenen üretim süreçlerine ve ürün kalitesine tam uygunluk belgesi." },
-      { "code": "HELAL SERTİFİKASI", "title": "Tortillas Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." },
-      { "code": "HELAL SERTİFİKASI", "title": "Tortillove Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." },
-      { "code": "HELAL SERTİFİKASI", "title": "Happylla Ürün Grubu", "desc": "İslami usullere tam uygunluk gösteren %100 helal içerik ve üretim bandı güvencesi." }
+      { "code": "ISO 22000:2018", "title": "Gıda Güvenliği Yönetim Sistemi" },
+      { "code": "ISO 9001:2015", "title": "Kalite Yönetim Sistemi" },
+      { "code": "FSSC 22000", "title": "Global Gıda Güvenliği Belgesi" },
+      { "code": "SEDEX (SMETA)", "title": "Sosyal Uygunluk Denetimi" },
+      { "code": "TSE UYGUNLUK", "title": "Türk Standartlarına Uygunluk" },
+      { "code": "HELAL SERTİFİKASI", "title": "Tortillas Ürün Grubu" },
+      { "code": "HELAL SERTİFİKASI", "title": "Tortillove Ürün Grubu" },
+      { "code": "HELAL SERTİFİKASI", "title": "Happylla Ürün Grubu" }
     ],
     "featuredEyebrow": "Öne Çıkan Belge · Ayrı Sekmede Açılır",
     "featuredTitle": "Kalite ve Gıda Güvenliği Yönetim Sistemi Politikamız",
@@ -243,9 +243,9 @@
     "offerButton": "Toptan Fiyat Alın"
   },
   "preloader": {
-    "title": "Deneyimi Yükleniyor",
-    "subtitle": "155 kare ultra yüksek çözünürlüklü scroll animasyonu hazırlanıyor...",
-    "frameLabel": "Kare:",
-    "readyText": "Hazır! Giriş yapılıyor..."
+    "title": "Hoş Geldiniz",
+    "subtitle": "Sizin için hazırlanıyoruz...",
+    "frameLabel": "Yükleniyor:",
+    "readyText": "Hazır!"
   }
 }

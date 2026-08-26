@@ -48,7 +48,7 @@
       {
         "title": "High-Quality Flour",
         "subtitle": "Special Anatolian Blend",
-        "description": "Our dough formula is made with specially selected high-protein wheat flours.",
+        "description": "We produce using dough made with quality wheat flour.",
         "highlights": ["Quality Raw Materials", "Natural Taste & Aroma"]
       },
       {
@@ -161,14 +161,14 @@
     "activeLabel": "Active & Accredited",
     "viewLabel": "View",
     "docs": [
-      { "code": "ISO 22000:2018", "title": "Food Safety Management System", "desc": "International risk analysis and critical control point auditing across all processes, from raw material intake to shipment." },
-      { "code": "ISO 9001:2015", "title": "Quality Management System", "desc": "Certification showing a process-oriented approach to quality standards applied across all corporate departments." },
-      { "code": "FSSC 22000", "title": "Global Food Safety Certificate", "desc": "A top-tier certification enabling supply authorization to chain hypermarkets and international restaurant networks worldwide." },
-      { "code": "SEDEX (SMETA)", "title": "Social Compliance Audit", "desc": "A full-compliance document approved by independent audit bodies for worker rights, occupational health and ethical trade principles." },
-      { "code": "TSE COMPLIANCE", "title": "Turkish Standards Compliance", "desc": "A document of full compliance for production processes and product quality, audited by the Turkish Standards Institute." },
-      { "code": "HALAL CERTIFICATE", "title": "Tortillas Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." },
-      { "code": "HALAL CERTIFICATE", "title": "Tortillove Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." },
-      { "code": "HALAL CERTIFICATE", "title": "Happylla Product Group", "desc": "Assurance of 100% halal content and production line, fully compliant with Islamic requirements." }
+      { "code": "ISO 22000:2018", "title": "Food Safety Management System" },
+      { "code": "ISO 9001:2015", "title": "Quality Management System" },
+      { "code": "FSSC 22000", "title": "Global Food Safety Certificate" },
+      { "code": "SEDEX (SMETA)", "title": "Social Compliance Audit" },
+      { "code": "TSE COMPLIANCE", "title": "Turkish Standards Compliance" },
+      { "code": "HALAL CERTIFICATE", "title": "Tortillas Product Group" },
+      { "code": "HALAL CERTIFICATE", "title": "Tortillove Product Group" },
+      { "code": "HALAL CERTIFICATE", "title": "Happylla Product Group" }
     ],
     "featuredEyebrow": "Featured Document · Opens in a New Tab",
     "featuredTitle": "Our Quality & Food Safety Management System Policy",
@@ -243,9 +243,9 @@
     "offerButton": "Get Wholesale Pricing"
   },
   "preloader": {
-    "title": "Loading Experience",
-    "subtitle": "Preparing a 155-frame, ultra-high-resolution scroll animation...",
-    "frameLabel": "Frame:",
-    "readyText": "Ready! Loading..."
+    "title": "Welcome",
+    "subtitle": "Getting things ready for you...",
+    "frameLabel": "Loading:",
+    "readyText": "All set!"
   }
 }
