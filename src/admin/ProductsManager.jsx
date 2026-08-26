@@ -144,7 +144,7 @@ export default function ProductsManager() {
 
         <form onSubmit={handleSave} className="space-y-4 bg-white p-6 rounded-2xl border border-[#C89438]/25 shadow-sm">
           {/* Language-independent fields */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Field label="Slug (benzersiz, url-uyumlu) *">
               <input required value={editing.slug} onChange={(e) => setEditing({ ...editing, slug: e.target.value })} className="input" placeholder="sade-tortilla-lavas" />
             </Field>
@@ -158,7 +158,7 @@ export default function ProductsManager() {
             </Field>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Field label="Rozet (badge)">
               <input value={editing.badge} onChange={(e) => setEditing({ ...editing, badge: e.target.value })} className="input" placeholder="En Çok Satan" />
             </Field>
@@ -184,7 +184,7 @@ export default function ProductsManager() {
             <input value={editing.sizes} onChange={(e) => setEditing({ ...editing, sizes: e.target.value })} className="input" placeholder="15 cm, 20 cm, 25 cm" />
           </Field>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Field label="Paket İçi Adet Aralığı">
               <input value={editing.pack_count} onChange={(e) => setEditing({ ...editing, pack_count: e.target.value })} className="input" placeholder="10 - 18 Adet / Paket" />
             </Field>

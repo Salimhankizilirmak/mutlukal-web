@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
-import { Package, Image as ImageIcon, Briefcase, MessageSquare, CalendarDays, Users, LogOut, Clapperboard } from 'lucide-react';
+import { Package, Image as ImageIcon, Briefcase, MessageSquare, CalendarDays, Users, LogOut, Clapperboard, Menu, X } from 'lucide-react';
 import ProductsManager from './ProductsManager';
 import GalleryManager from './GalleryManager';
 import LeadsManager from './LeadsManager';
@@ -24,6 +24,7 @@ export default function AdminDashboard({ session }) {
   const perms = usePermissions(session?.user?.id);
   const visibleTabs = perms ? ALL_TABS.filter((t) => perms[t.perm]) : [];
   const [tab, setTab] = useState(null);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     if (perms && !tab && visibleTabs.length > 0) {
@@ -40,18 +41,61 @@ export default function AdminDashboard({ session }) {
     );
   }
 
+  const selectTab = (id) => {
+    setTab(id);
+    setMobileNavOpen(false);
+  };
+
   return (
-    <div className="min-h-screen bg-[#FAF3E3] text-[#1B2A3A] font-sans flex">
-      {/* Sidebar */}
-      <aside className="w-64 shrink-0 bg-[#1B2A3A] text-white flex flex-col">
-        <div className="p-6 border-b border-white/10">
-          <span className="font-serif text-xl font-bold">MUTLUKAL</span>
-          <span className="block text-[10px] font-bold text-[#E2B45F] uppercase tracking-widest mt-0.5">
+    <div className="min-h-screen bg-[#FAF3E3] text-[#1B2A3A] font-sans lg:flex">
+      {/* Mobile top bar */}
+      <div className="lg:hidden sticky top-0 z-30 flex items-center justify-between px-4 py-3 bg-[#1B2A3A] text-white shadow-md">
+        <div>
+          <span className="font-serif text-lg font-bold">MUTLUKAL</span>
+          <span className="block text-[9px] font-bold text-[#E2B45F] uppercase tracking-widest">
             Admin Panel
           </span>
         </div>
+        <button
+          onClick={() => setMobileNavOpen(true)}
+          className="p-2 rounded-lg bg-white/10 hover:bg-white/20 cursor-pointer"
+          aria-label="Menüyü aç"
+        >
+          <Menu className="w-5 h-5" />
+        </button>
+      </div>
 
-        <nav className="flex-1 p-3 space-y-1">
+      {/* Backdrop behind the mobile drawer */}
+      {mobileNavOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+          onClick={() => setMobileNavOpen(false)}
+        />
+      )}
+
+      {/* Sidebar — static column on desktop, slide-in drawer on mobile */}
+      <aside
+        className={`w-64 shrink-0 bg-[#1B2A3A] text-white flex flex-col fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 lg:static lg:translate-x-0 lg:z-auto ${
+          mobileNavOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="p-6 border-b border-white/10 flex items-center justify-between">
+          <div>
+            <span className="font-serif text-xl font-bold">MUTLUKAL</span>
+            <span className="block text-[10px] font-bold text-[#E2B45F] uppercase tracking-widest mt-0.5">
+              Admin Panel
+            </span>
+          </div>
+          <button
+            onClick={() => setMobileNavOpen(false)}
+            className="lg:hidden p-1.5 rounded-lg hover:bg-white/10 cursor-pointer"
+            aria-label="Menüyü kapat"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+
+        <nav className="flex-1 p-3 space-y-1 overflow-y-auto">
           {visibleTabs.length === 0 && (
             <p className="px-4 py-3 text-xs text-white/50 leading-relaxed">
               Hesabınıza henüz hiçbir sayfa için yetki tanımlanmamış. Lütfen sizi oluşturan
@@ -61,7 +105,7 @@ export default function AdminDashboard({ session }) {
           {visibleTabs.map((t) => (
             <button
               key={t.id}
-              onClick={() => setTab(t.id)}
+              onClick={() => selectTab(t.id)}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-colors cursor-pointer ${
                 tab === t.id
                   ? 'bg-[#C89438] text-[#1B2A3A]'
@@ -87,7 +131,7 @@ export default function AdminDashboard({ session }) {
       </aside>
 
       {/* Content */}
-      <main className="flex-1 overflow-y-auto p-6 sm:p-10">
+      <main className="flex-1 min-w-0 overflow-y-auto p-4 sm:p-6 lg:p-10">
         {tab === 'products' && <ProductsManager />}
         {tab === 'gallery' && <GalleryManager />}
         {tab === 'events' && <EventsManager />}

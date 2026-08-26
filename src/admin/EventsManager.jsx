@@ -105,7 +105,7 @@ export default function EventsManager() {
             <input required value={editing.title} onChange={(e) => setEditing({ ...editing, title: e.target.value })} className="input" placeholder="Foodex Türkiye 2026" />
           </Field>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Field label="Tarih">
               <input type="date" value={editing.event_date} onChange={(e) => setEditing({ ...editing, event_date: e.target.value })} className="input" />
             </Field>
