@@ -3,21 +3,9 @@ import { Users, Send, CheckCircle2, HeartHandshake, TrendingUp, GraduationCap, B
 import { supabase, isSupabaseConfigured } from '../lib/supabaseClient';
 
 const perks = [
-  {
-    icon: HeartHandshake,
-    title: 'Aile Kültürü',
-    desc: 'Yılların getirdiği tecrübeyi paylaşan, birbirine değer veren bir ekip.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Gelişim Fırsatları',
-    desc: 'Endüstriyel gıda üretiminde kariyerinizi büyütebileceğiniz açık pozisyonlar.',
-  },
-  {
-    icon: GraduationCap,
-    title: 'Eğitim & Sertifikasyon',
-    desc: 'ISO, HACCP ve gıda güvenliği alanlarında sürekli eğitim desteği.',
-  },
+  { icon: HeartHandshake, title: 'Aile Kültürü' },
+  { icon: TrendingUp, title: 'Gelişim Fırsatları' },
+  { icon: GraduationCap, title: 'Eğitim & Sertifikasyon' },
 ];
 
 const CUSTOM_OPTION = '__custom__';
@@ -105,8 +93,7 @@ export default function CareersSection() {
               <div className="w-12 h-12 mx-auto rounded-xl bg-[#FAF3E3] border border-[#C89438]/35 flex items-center justify-center text-[#C89438] mb-4">
                 <p.icon className="w-6 h-6" />
               </div>
-              <h3 className="font-serif font-bold text-lg mb-1.5">{p.title}</h3>
-              <p className="text-xs text-[#5C6B73] leading-relaxed">{p.desc}</p>
+              <h3 className="font-serif font-bold text-lg">{p.title}</h3>
             </div>
           ))}
         </div>
