@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import ScrollCanvas from './components/ScrollCanvas';
+import AboutSection from './components/AboutSection';
 import QualitySection from './components/QualitySection';
 import ExportSection from './components/ExportSection';
 import ProductsGrid from './components/ProductsGrid';
@@ -43,6 +44,9 @@ export default function App() {
               loadedImages={loadedImages}
               onOpenContact={() => setIsContactOpen(true)}
             />
+
+            {/* 0. Hakkımızda / Misyon & Vizyon Section */}
+            <AboutSection />
 
             {/* 1. Endüstriyel Üretim & Kalite Section */}
             <QualitySection />

@@ -43,6 +43,7 @@ export default function Navbar({ onOpenContact }) {
   ];
 
   const corporateLinks = [
+    { name: t('nav.about'), href: '#hakkimizda' },
     { name: t('nav.quality'), href: '#kalite' },
     { name: t('nav.ads'), href: '#reklamlar' },
     { name: t('nav.events'), href: '#etkinlikler' },
@@ -53,12 +54,13 @@ export default function Navbar({ onOpenContact }) {
   const allLinksForMobile = [
     primaryLinks[0],
     corporateLinks[0],
+    corporateLinks[1],
     primaryLinks[1],
     primaryLinks[2],
-    corporateLinks[1],
     corporateLinks[2],
     corporateLinks[3],
     corporateLinks[4],
+    corporateLinks[5],
     primaryLinks[3],
   ];
 

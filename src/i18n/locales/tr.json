@@ -5,6 +5,7 @@
     "certifications": "Sertifikalar",
     "contact": "İletişim",
     "corporate": "Kurumsal",
+    "about": "Hakkımızda",
     "quality": "Endüstriyel Kalite",
     "events": "Etkinlikler",
     "ads": "Reklamlarımız",
@@ -31,6 +32,22 @@
     "wheatTitle": "Anadolu Buğdayından Özel Un Karışımı",
     "wheatDesc": "Özel harman un karışımımızı sizler için üretiyoruz.",
     "halalBadge": "%100 Helal Sertifikalı Üretim"
+  },
+  "about": {
+    "eyebrow": "HAKKIMIZDA",
+    "title": "2007'den Bu Yana Mutlukal Gıda",
+    "paragraph1": "Çorum Organize Sanayi Bölgesi'nde 2007 yılından bu yana faaliyet gösteren Mutlukal Gıda, 15.000 m² açık ve 5.000 m² kapalı alana sahip üretim tesisinde Türk Gıda Kodeksi'ne uygun olarak köy tadında lezzetler üretiyor.",
+    "paragraph2": "Üretimimizin yaklaşık %60'ını iç pazarda değerlendiriyor, kalan kısmını Avrupa ve Orta Doğu pazarlarına ihraç ediyoruz; bu üretim gücümüzle 150 kişilik bir istihdam sağlıyoruz.",
+    "stats": [
+      { "value": "2007", "label": "Kuruluş Yılı" },
+      { "value": "20.000 m²", "label": "Toplam Tesis Alanı" },
+      { "value": "150+", "label": "Çalışan" },
+      { "value": "%60", "label": "İç Pazar Payı" }
+    ],
+    "missionTitle": "Misyonumuz",
+    "missionText": "Müşterilerimize doğal ve kaliteli ürünler sunarak sağlıklı nesillerin yetişmesine katkı sağlamak. Değişen tüketici trendlerine uygun olarak Ar-Ge'den üretim ve satış noktasına kadar yüksek standartlarda yenilikçi ürünleri uygun fiyatlarla tüketicilerimizle buluşturmak ve lezzete herkesin ulaşmasını sağlamak.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Tüm çalışanlarımız ve tedarikçilerimizle birlikte; müşterilerimize lezzetli ve üstün kaliteli gıdaları en hijyenik ortamlarda üretmek, istikrarlı bir şekilde büyüyerek marka değerimizi sürekli artırmak ve sektöre, ülke ekonomisine katma değer sağlamaktır."
   },
   "quality": {
     "eyebrow": "ÜRETİM STANDARTLARIMIZ",
