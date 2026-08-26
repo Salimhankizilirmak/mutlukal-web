@@ -145,10 +145,9 @@ export default function Footer({ onOpenContact }) {
 
         {/* Factory Location & Video */}
         <div className="mb-16">
-          <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#1B2A3A] mb-1.5">
+          <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#1B2A3A] mb-6">
             {t('footer.factoryTitle')}
           </h3>
-          <p className="text-sm text-[#5C6B73] mb-6 max-w-2xl">{t('footer.factoryDesc')}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="h-64 sm:h-80 rounded-2xl overflow-hidden border border-[#C89438]/25 shadow-sm">
               <iframe

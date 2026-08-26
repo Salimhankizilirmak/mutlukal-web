@@ -197,7 +197,6 @@
   "footer": {
     "description": "Çorum'daki tesisimizde tortilla ve pizza tabanı üreten bir gıda markasıyız.",
     "factoryTitle": "Fabrikamızı Ziyaret Edin",
-    "factoryDesc": "Üretim tesisimizi tanıtım videomuzdan izleyebilir, haritadan konumumuzu bulabilirsiniz.",
     "quickAccess": "Hızlı Erişim",
     "links": { "home": "Ana Sayfa", "quality": "Endüstriyel Kalite", "products": "Ürün Portföyü", "catalog": "E-Katalog & Spesifikasyon", "certifications": "Sertifikalarımız", "offer": "Toptan Teklif Alın" },
     "productLines": "Ürün Gruplarımız",
