@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Sparkles, ArrowDown, ShieldCheck, Wheat, Factory, ChevronRight } from 'lucide-react';
+import { Sparkles, ArrowDown, ShieldCheck, Award, Factory, ChevronRight } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -197,7 +197,7 @@ export default function ScrollCanvas({ loadedImages = [], onOpenContact }) {
       >
         <div className="max-w-xl space-y-4 text-right rtl:text-left">
           <div className="inline-flex items-center gap-3 bg-black/50 backdrop-blur-md px-4 py-2 rounded-xl border border-[#E2B45F]/40 text-[#E2B45F] shadow-lg ml-auto rtl:ml-0 rtl:mr-auto">
-            <Wheat className="w-5 h-5 text-[#E2B45F]" />
+            <Award className="w-5 h-5 text-[#E2B45F]" />
             <span className="text-xs font-bold tracking-widest uppercase">
               {t('hero.wheatBadge')}
             </span>
