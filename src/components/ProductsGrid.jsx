@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Sparkles, ArrowRight, Layers, Check, Info } from 'lucide-react';
+import { Sparkles, Layers, Check, Info } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '../lib/supabaseClient';
 
 // Fields that don't change with language — these stay index-matched to the
@@ -199,25 +199,6 @@ export default function ProductsGrid({ onSelectProduct, onOpenContact }) {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Custom Wholesale Callout Banner */}
-        <div className="mt-16 glass-panel p-8 sm:p-12 rounded-3xl border border-[#C89438]/35 flex flex-col md:flex-row items-center justify-between gap-8 bg-white shadow-xl">
-          <div className="space-y-2 text-center md:text-left rtl:md:text-right">
-            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1B2A3A]">
-              {t('products.ctaTitle')}
-            </h3>
-            <p className="text-sm text-[#5C6B73] max-w-2xl font-medium">
-              {t('products.ctaDesc')}
-            </p>
-          </div>
-          <button
-            onClick={onOpenContact}
-            className="px-8 py-4 rounded-xl bg-[#1B2A3A] text-white font-bold text-sm shadow-xl hover:bg-[#C89438] transition-all shrink-0 cursor-pointer flex items-center gap-2"
-          >
-            <span>{t('products.ctaButton')}</span>
-            <ArrowRight className="w-4 h-4 text-[#E2B45F] rtl:rotate-180" />
-          </button>
         </div>
       </div>
     </section>

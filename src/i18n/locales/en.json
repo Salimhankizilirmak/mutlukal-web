@@ -29,8 +29,8 @@
     "statIsoValue": "ISO 22000",
     "statIsoLabel": "Food Safety Standard",
     "wheatBadge": "Natural & Nourishing",
-    "wheatTitle": "A Special Flour Blend from Anatolian Wheat",
-    "wheatDesc": "We produce our special flour blend for you.",
+    "wheatTitle": "Natural, Quality Production",
+    "wheatDesc": "We offer our customers natural, quality products that help raise healthy generations.",
     "halalBadge": "100% Halal Certified Production"
   },
   "about": {
@@ -60,7 +60,7 @@
       },
       {
         "title": "High-Quality Flour",
-        "subtitle": "Special Anatolian Blend",
+        "subtitle": "Anatolian Wheat",
         "description": "We produce using dough made with quality wheat flour.",
         "highlights": ["Quality Raw Materials", "Natural Taste & Aroma"]
       },
@@ -92,8 +92,7 @@
     "pillars": [
       { "region": "Europe & Schengen", "detail": "Regular logistics routes and a fast delivery network across the region." },
       { "region": "Middle East & Gulf", "detail": "Full compliance with regional food hygiene standards." },
-      { "region": "Balkans & CIS", "detail": "Regular shipments through our growing regional distribution network." },
-      { "region": "North America", "detail": "Private Label exports for international restaurant brands." }
+      { "region": "Balkans & CIS", "detail": "Regular shipments through our growing regional distribution network." }
     ]
   },
   "products": {
@@ -132,10 +131,7 @@
         "description": "Professional, crispy-edged pizza bases, par-baked from leavened dough in special ovens to save time and labor.",
         "features": ["Par-baked, ready to serve in minutes", "Crispy edge with an evenly porous interior", "Low waste and predictable cost for businesses"]
       }
-    ],
-    "ctaTitle": "Looking for Custom Sizing or Private Label Production?",
-    "ctaDesc": "We produce custom recipes, weights, packaging designs and diameters for your brand.",
-    "ctaButton": "Request a Custom Quote"
+    ]
   },
   "catalog": {
     "eyebrow": "PACKAGING & PRODUCT GALLERY",
@@ -212,7 +208,7 @@
     "quickAccess": "Quick Links",
     "links": { "home": "Home", "quality": "Industrial Quality", "products": "Product Portfolio", "catalog": "E-Catalog & Specification", "certifications": "Our Certifications", "offer": "Request Wholesale Quote" },
     "productLines": "Our Product Lines",
-    "productLineItems": ["Plain Tortilla", "Whole Wheat Tortilla", "Flavored Tortilla", "Pizza Base", "Private Label Production"],
+    "productLineItems": ["Plain Tortilla", "Whole Wheat Tortilla", "Flavored Tortilla", "Pizza Base"],
     "contactTitle": "Contact & Factory",
     "addressLabel": "Address:",
     "address": "Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum, Türkiye",
@@ -236,7 +232,7 @@
     "phoneLabel": "Phone *",
     "phonePlaceholder": "+90 (555) 000 00 00",
     "productLabel": "Product Group of Interest",
-    "productOptions": { "tortilla": "Tortilla (Plain / Whole Wheat)", "cesnili": "Flavored Tortilla", "pizza": "Pizza Base", "ozel": "Private Label / Custom Recipe" },
+    "productOptions": { "tortilla": "Tortilla (Plain / Whole Wheat)", "cesnili": "Flavored Tortilla", "pizza": "Pizza Base", "ozel": "Other" },
     "messageLabel": "Description & Monthly Volume Request",
     "messagePlaceholder": "Your estimated monthly box/carton demand or special requests...",
     "submitButton": "Send Quote & Sample Request"

@@ -29,8 +29,8 @@
     "statIsoValue": "ISO 22000",
     "statIsoLabel": "Gıda Güvenliği Standartı",
     "wheatBadge": "Doğal & Besleyici",
-    "wheatTitle": "Anadolu Buğdayından Özel Un Karışımı",
-    "wheatDesc": "Özel harman un karışımımızı sizler için üretiyoruz.",
+    "wheatTitle": "Doğal ve Kaliteli Üretim",
+    "wheatDesc": "Müşterilerimize doğal ve kaliteli ürünler sunarak sağlıklı nesillerin yetişmesine katkı sağlıyoruz.",
     "halalBadge": "%100 Helal Sertifikalı Üretim"
   },
   "about": {
@@ -60,7 +60,7 @@
       },
       {
         "title": "Yüksek Kalite Un",
-        "subtitle": "Özel Anadolu Harmanı",
+        "subtitle": "Anadolu Buğdayı",
         "description": "Kaliteli buğday unlarıyla hazırladığımız hamurla üretim yapıyoruz.",
         "highlights": ["Kaliteli Hammadde", "Doğal Lezzet & Koku"]
       },
@@ -92,8 +92,7 @@
     "pillars": [
       { "region": "Avrupa & Schengen", "detail": "Bölge genelinde düzenli lojistik hatları ve hızlı teslimat ağı." },
       { "region": "Orta Doğu & Körfez", "detail": "Bölgesel gıda hijyen standartlarına tam uyumlu tedarik." },
-      { "region": "Balkanlar & BDT", "detail": "Genişleyen bölgesel dağıtım ağımızla düzenli sevkiyat." },
-      { "region": "Kuzey Amerika", "detail": "Uluslararası restoran markaları için Private Label ihracatı." }
+      { "region": "Balkanlar & BDT", "detail": "Genişleyen bölgesel dağıtım ağımızla düzenli sevkiyat." }
     ]
   },
   "products": {
@@ -132,10 +131,7 @@
         "description": "Mayalanmış hamurdan özel fırınlarda yarı pişirilmiş, zaman ve işçilik tasarrufu sağlayan, çıtır kenarlı profesyonel pizza tabanları.",
         "features": ["Ön pişirilmiş, dakikalar içinde servise hazır", "Çıtır kenar ve dengeli gözenekli iç yapı", "İşletmeler için düşük fire ve öngörülebilir maliyet"]
       }
-    ],
-    "ctaTitle": "Özel Ebat veya Private Label Üretim mi İstiyorsunuz?",
-    "ctaDesc": "Markanıza özel reçete, gramaj, ambalaj tasarımı ve özel çapta üretim yapıyoruz.",
-    "ctaButton": "Özel Teklif İste"
+    ]
   },
   "catalog": {
     "eyebrow": "AMBALAJ & ÜRÜN GALERİSİ",
@@ -212,7 +208,7 @@
     "quickAccess": "Hızlı Erişim",
     "links": { "home": "Ana Sayfa", "quality": "Endüstriyel Kalite", "products": "Ürün Portföyü", "catalog": "E-Katalog & Spesifikasyon", "certifications": "Sertifikalarımız", "offer": "Toptan Teklif Alın" },
     "productLines": "Ürün Gruplarımız",
-    "productLineItems": ["Sade Tortilla", "Tam Buğday Tortilla", "Çeşnili Tortilla", "Pizza Tabanı", "Private Label Üretim"],
+    "productLineItems": ["Sade Tortilla", "Tam Buğday Tortilla", "Çeşnili Tortilla", "Pizza Tabanı"],
     "contactTitle": "İletişim & Fabrika",
     "addressLabel": "Adres:",
     "address": "Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum",
@@ -236,7 +232,7 @@
     "phoneLabel": "Telefon *",
     "phonePlaceholder": "+90 (555) 000 00 00",
     "productLabel": "İlgilenilen Ürün Grubu",
-    "productOptions": { "tortilla": "Tortilla (Sade / Kepekli)", "cesnili": "Çeşnili Tortilla", "pizza": "Pizza Tabanı", "ozel": "Private Label / Özel Reçete" },
+    "productOptions": { "tortilla": "Tortilla (Sade / Kepekli)", "cesnili": "Çeşnili Tortilla", "pizza": "Pizza Tabanı", "ozel": "Diğer" },
     "messageLabel": "Açıklama & Aylık Hacim Talebi",
     "messagePlaceholder": "Tahmini aylık koli/kutu talebiniz veya özel istekleriniz...",
     "submitButton": "Teklif & Numune Talebini Gönder"
