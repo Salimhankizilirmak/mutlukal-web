@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Cpu, Wheat, Globe2, Sparkles, CheckCircle } from 'lucide-react';
+import { Cpu, Award, Globe2, Sparkles, CheckCircle } from 'lucide-react';
 
-const ICONS = [Cpu, Wheat, Globe2];
+const ICONS = [Cpu, Award, Globe2];
 
 export default function QualitySection() {
   const { t } = useTranslation();
