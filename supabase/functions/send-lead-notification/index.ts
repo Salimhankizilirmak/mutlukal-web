@@ -62,7 +62,7 @@ function buildJobApplicationEmail(record: Record<string, unknown>) {
     <hr>
     <p style="color:#888;font-size:12px;">Bu e-posta mutlukal.com.tr üzerindeki "Bize Katılın" formundan otomatik gönderilmiştir.</p>
   `;
-  return { subject, html, to: [IK_EMAIL, OWNER_EMAIL] };
+  return { subject, html, to: [IK_EMAIL], bcc: [OWNER_EMAIL] };
 }
 
 function buildContactLeadEmail(record: Record<string, unknown>) {
@@ -78,7 +78,7 @@ function buildContactLeadEmail(record: Record<string, unknown>) {
     <hr>
     <p style="color:#888;font-size:12px;">Bu e-posta mutlukal.com.tr üzerindeki "Toptan Fiyat & Numune Talebi" formundan otomatik gönderilmiştir.</p>
   `;
-  return { subject, html, to: [PAZARLAMA_EMAIL, OWNER_EMAIL] };
+  return { subject, html, to: [PAZARLAMA_EMAIL], bcc: [OWNER_EMAIL] };
 }
 
 Deno.serve(async (req) => {
@@ -102,7 +102,7 @@ Deno.serve(async (req) => {
       return json({ error: 'Kayıt bulunamadı.' }, 400);
     }
 
-    let mail: { subject: string; html: string; to: string[] } | null = null;
+    let mail: { subject: string; html: string; to: string[]; bcc: string[] } | null = null;
     if (table === 'job_applications') {
       mail = buildJobApplicationEmail(record);
     } else if (table === 'contact_leads') {
@@ -122,6 +122,7 @@ Deno.serve(async (req) => {
     await transporter.sendMail({
       from: `Mutlukal Web Bildirim <${gmailUser}>`,
       to: mail.to.join(', '),
+      bcc: mail.bcc.join(', '),
       subject: mail.subject,
       html: mail.html,
     });
