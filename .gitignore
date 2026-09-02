@@ -8,3 +8,7 @@ dist
 
 # İç kullanım belgeleri — asla public/ içine veya git'e eklenmemeli
 private-docs/
+
+# Natro/cPanel manuel deploy artifacts (Vercel dağıtımı bunları kullanmıyor)
+.htaccess
+mutlukal-dist.zip

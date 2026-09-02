@@ -82,15 +82,17 @@ Deno.serve(async (req) => {
     const adminClient = createClient(supabaseUrl, serviceRoleKey);
 
     // 2) Çağıranın "Kullanıcılar" yetkisi var mı kontrol et. admin_permissions'ta
-    //    hiç satırı yoksa (grandfather/ilk admin) izinli sayılır.
+    //    açıkça can_users = true olan bir satırı olmalı — satırı yoksa (örn.
+    //    biri kendi hesabını public sign-up ile açtıysa) YETKİSİZ sayılır.
+    //    (Önceki "satır yoksa = tam yetkili" kuralı bir güvenlik açığıydı —
+    //    bkz. schema-v6-security-fix.sql.)
     const { data: callerPerm } = await adminClient
       .from('admin_permissions')
       .select('can_users')
       .eq('user_id', caller.id)
       .maybeSingle();
 
-    const callerIsGrandfatherAdmin = !callerPerm;
-    const callerCanManageUsers = callerIsGrandfatherAdmin || callerPerm.can_users === true;
+    const callerCanManageUsers = callerPerm?.can_users === true;
 
     if (!callerCanManageUsers) {
       return json({ error: 'Kullanıcı oluşturma yetkiniz yok.' }, 403);

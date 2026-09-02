@@ -1,21 +1,13 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
 
-// A user with NO row in admin_permissions is treated as a full/grandfather
-// admin (this is how your own first account — created directly in the
-// Supabase Dashboard — keeps access to everything). Any user created via
-// the "Kullanıcılar" tab always gets an explicit row, so they only see
-// what was checked for them.
-const FULL_ACCESS = {
-  products: true,
-  gallery: true,
-  applications: true,
-  leads: true,
-  events: true,
-  users: true,
-  ads: true,
-};
-
+// Fail closed: a user with NO row in admin_permissions (or any query error)
+// has NO access to anything. Every admin account — including the primary
+// one — needs an explicit row with the permissions it should have (see
+// schema-v6-security-fix.sql). An earlier "no row = full access" convention
+// was a real security hole: anyone who registered their own Supabase Auth
+// account (public sign-up is on by default) automatically became a full
+// admin with zero configuration.
 const NO_ACCESS = {
   products: false,
   gallery: false,
@@ -38,10 +30,10 @@ export default function usePermissions(userId) {
       .select('can_products, can_gallery, can_applications, can_leads, can_events, can_users, can_ads')
       .eq('user_id', userId)
       .maybeSingle()
-      .then(({ data }) => {
+      .then(({ data, error }) => {
         if (cancelled) return;
-        if (!data) {
-          setPerms(FULL_ACCESS);
+        if (error || !data) {
+          setPerms(NO_ACCESS);
           return;
         }
         setPerms({
