@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KVKK Aydınlatma Metni ve Gizlilik Politikası | MUTLUKAL</title>
+<meta name="description" content="MUTLUKAL Gıda - 6698 Sayılı Kişisel Verilerin Korunması Kanunu (KVKK) Aydınlatma Metni ve Gizlilik Politikası" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-light:#FAF3E3;
+    --bg-card:#FFFFFF;
+    --text-main:#1B2A3A;
+    --text-muted:#5C6B73;
+    --gold:#C89438;
+    --gold-light:#E2B45F;
+    --gold-dark:#B88432;
+    --navy:#1B2A3A;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Outfit','Plus Jakarta Sans',sans-serif;
+    background-color:var(--bg-light);
+    color:var(--text-main);
+    letter-spacing:-0.01em;
+    overflow-x:hidden;
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(200,148,56,0.10), transparent 45%),
+      radial-gradient(circle at 85% 90%, rgba(27,42,58,0.06), transparent 50%);
+    background-attachment:fixed;
+  }
+  h1,h2,h3,.font-serif{
+    font-family:'Fraunces',Georgia,serif;
+  }
+  a{color:inherit;}
+  a.inline-link{color:var(--gold-dark); text-decoration:underline; font-weight:600;}
+  ::-webkit-scrollbar{width:8px;}
+  ::-webkit-scrollbar-track{background:#F4EAD5;}
+  ::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px;}
+  ::-webkit-scrollbar-thumb:hover{background:var(--navy);}
+
+  .topbar{
+    position:sticky; top:0; z-index:10;
+    background:rgba(250,243,227,0.92);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(200,148,56,0.25);
+  }
+  .topbar-inner{
+    max-width:900px; margin:0 auto;
+    padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px;
+  }
+  .brand{display:flex; align-items:center; gap:10px; text-decoration:none;}
+  .brand img{height:38px; width:auto; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(27,42,58,0.15));}
+  .brand span{font-family:'Fraunces',serif; font-size:20px; font-weight:700; letter-spacing:0.03em; color:var(--text-main);}
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:13px; font-weight:600; color:var(--text-main);
+    padding:8px 14px; border-radius:10px;
+    background:#fff; border:1px solid rgba(200,148,56,0.3);
+    box-shadow:0 1px 2px rgba(27,42,58,0.06);
+    transition:all .25s ease;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+  .back-link:hover{color:var(--gold); border-color:var(--gold);}
+
+  main{max-width:900px; margin:0 auto; padding:56px 24px 80px;}
+
+  .badge{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 16px; border-radius:999px;
+    background:#fff; border:1px solid rgba(200,148,56,0.35);
+    color:var(--gold); font-size:12px; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.14em;
+    box-shadow:0 1px 2px rgba(27,42,58,0.05);
+    margin-bottom:20px;
+  }
+  .badge svg{width:14px; height:14px;}
+
+  h1.title{
+    font-size:clamp(28px,5vw,42px);
+    font-weight:700;
+    line-height:1.15;
+    color:var(--text-main);
+    margin:0 0 14px;
+  }
+  h1.title em{
+    font-style:normal;
+    color:var(--gold-dark);
+  }
+  p.lead{
+    font-size:16px; line-height:1.7; color:var(--text-muted);
+    max-width:680px; margin:0 0 40px;
+  }
+
+  .toc{
+    display:flex; flex-wrap:wrap; gap:10px;
+    margin-bottom:40px;
+  }
+  .toc a{
+    font-size:13px; font-weight:700; color:var(--text-main);
+    padding:8px 16px; border-radius:999px;
+    background:#fff; border:1px solid rgba(200,148,56,0.3);
+    text-decoration:none;
+    transition:all .2s ease;
+  }
+  .toc a:hover{border-color:var(--gold); color:var(--gold-dark);}
+
+  .policy-card{
+    background:var(--bg-card);
+    border:1px solid rgba(200,148,56,0.2);
+    border-radius:24px;
+    padding:clamp(24px,5vw,52px);
+    box-shadow:0 20px 60px rgba(27,42,58,0.08);
+    position:relative;
+    overflow:hidden;
+    margin-bottom:32px;
+    scroll-margin-top:90px;
+  }
+  .policy-card::before{
+    content:'';
+    position:absolute; top:0; left:0; right:0; height:6px;
+    background:linear-gradient(90deg,var(--gold-dark),var(--gold-light),var(--gold-dark));
+  }
+  .policy-card h2{
+    font-size:clamp(20px,3.2vw,26px);
+    font-weight:700;
+    color:var(--text-main);
+    margin:0 0 20px;
+    padding-bottom:16px;
+    border-bottom:1px solid rgba(200,148,56,0.2);
+  }
+  .policy-card h3{
+    font-size:16px;
+    font-weight:700;
+    color:var(--gold-dark);
+    margin:26px 0 10px;
+  }
+  .policy-card p{
+    font-size:14.5px; line-height:1.75; color:var(--text-main);
+    margin:0 0 14px;
+  }
+  .policy-card p.muted{ color:var(--text-muted); }
+
+  ul.policy-list{
+    list-style:none; margin:0 0 14px; padding:0;
+    display:flex; flex-direction:column; gap:14px;
+  }
+  ul.policy-list li{
+    display:flex; align-items:flex-start; gap:12px;
+    font-size:14.5px; line-height:1.65; color:var(--text-main);
+  }
+  ul.policy-list li .icon{
+    flex:0 0 auto;
+    width:26px; height:26px; border-radius:8px;
+    background:var(--bg-light);
+    border:1px solid rgba(200,148,56,0.35);
+    display:flex; align-items:center; justify-content:center;
+    margin-top:1px;
+  }
+  ul.policy-list li .icon svg{width:14px; height:14px; color:var(--gold-dark);}
+
+  table.data-table{
+    width:100%; border-collapse:collapse; margin:14px 0 20px;
+    font-size:13.5px;
+  }
+  table.data-table th, table.data-table td{
+    text-align:left; padding:10px 12px;
+    border-bottom:1px solid rgba(200,148,56,0.2);
+    vertical-align:top;
+  }
+  table.data-table th{
+    color:var(--gold-dark); font-weight:700; font-size:12px;
+    text-transform:uppercase; letter-spacing:0.06em;
+  }
+
+  .contact-box{
+    background:var(--bg-light);
+    border:1px solid rgba(200,148,56,0.3);
+    border-radius:16px;
+    padding:20px 22px;
+    font-size:14px;
+    line-height:1.8;
+    margin-top:8px;
+  }
+  .contact-box strong{color:var(--text-main);}
+
+  .signature{
+    margin-top:36px; padding-top:24px;
+    border-top:1px dashed rgba(200,148,56,0.35);
+    font-size:13px; color:var(--text-muted); font-weight:600;
+  }
+
+  footer.page-footer{
+    max-width:900px; margin:0 auto; padding:0 24px 40px;
+    text-align:center;
+    font-size:12px; color:var(--text-muted);
+  }
+
+  @media print{
+    .topbar,.toc{display:none;}
+    body{background:#fff;}
+    .policy-card{box-shadow:none; border:none;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="/">
+        <img src="/logo.png" alt="MUTLUKAL" />
+        <span>MUTLUKAL</span>
+      </a>
+      <a class="back-link" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Ana Sayfaya Dön
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span>Kişisel Verilerin Korunması</span>
+    </div>
+
+    <h1 class="title">KVKK Aydınlatma Metni ve<br/><em>Gizlilik Politikası</em></h1>
+    <p class="lead">
+      MUTLUKAL GIDA SANAYİ TİCARET A.Ş. olarak, web sitemiz üzerinden bizimle paylaştığınız
+      kişisel verilerinizin güvenliğine önem veriyoruz. Bu metin, 6698 sayılı Kişisel Verilerin
+      Korunması Kanunu ("KVKK") uyarınca sizi bilgilendirmek amacıyla hazırlanmıştır.
+    </p>
+
+    <div class="toc">
+      <a href="#aydinlatma-metni">KVKK Aydınlatma Metni</a>
+      <a href="#basvuru-formu">İş Başvuru Formu</a>
+      <a href="#teklif-formu">Teklif/İletişim Formu</a>
+      <a href="#haklariniz">Haklarınız</a>
+      <a href="#gizlilik-politikasi">Gizlilik Politikası</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+
+    <div class="policy-card" id="aydinlatma-metni">
+      <h2>1) Veri Sorumlusunun Kimliği</h2>
+      <p>
+        6698 sayılı KVKK uyarınca kişisel verileriniz; veri sorumlusu sıfatıyla
+        <strong> MUTLUKAL GIDA SANAYİ TİCARET A.Ş.</strong> ("MUTLUKAL") tarafından, aşağıda
+        açıklanan kapsamda işlenebilecektir.
+      </p>
+      <div class="contact-box">
+        <strong>MUTLUKAL GIDA SANAYİ TİCARET A.Ş.</strong><br/>
+        Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum<br/>
+        Telefon: (0364) 254 90 54 &nbsp;·&nbsp; E-posta: info@mutlukal.com.tr
+      </div>
+    </div>
+
+    <div class="policy-card" id="basvuru-formu">
+      <h2>2) İş Başvuru Formu Kapsamında İşlenen Veriler</h2>
+      <p>"Bize Katılın" sayfasındaki iş başvuru formunu doldurduğunuzda aşağıdaki kişisel verileriniz işlenir:</p>
+      <table class="data-table">
+        <tr><th>Veri</th><th>İşlenme Amacı</th></tr>
+        <tr><td>Ad Soyad</td><td>Başvurunuzun tarafımızca tanımlanması ve değerlendirilmesi</td></tr>
+        <tr><td>E-posta, Telefon</td><td>Sizinle başvurunuz hakkında iletişime geçilmesi</td></tr>
+        <tr><td>Başvurulan Pozisyon</td><td>Uygun pozisyon için değerlendirme yapılması</td></tr>
+        <tr><td>Mesaj/Özgeçmiş Bilgisi</td><td>Adaylık sürecinin yürütülmesi</td></tr>
+      </table>
+      <p class="muted">
+        Bu veriler, İnsan Kaynakları ekibimize ve ilgili departman yöneticilerine, yalnızca
+        işe alım sürecini yürütmek amacıyla iletilir. Değerlendirme sonucunda olumsuz dönüş
+        yapılan başvurular, makul bir süre saklandıktan sonra imha edilir; olumlu sonuçlanan
+        başvurularda veriler özlük dosyası kapsamında saklanmaya devam eder.
+      </p>
+    </div>
+
+    <div class="policy-card" id="teklif-formu">
+      <h2>3) Teklif / İletişim Formu Kapsamında İşlenen Veriler</h2>
+      <p>"Toptan Fiyat &amp; Numune Talebi" formunu doldurduğunuzda aşağıdaki kişisel verileriniz işlenir:</p>
+      <table class="data-table">
+        <tr><th>Veri</th><th>İşlenme Amacı</th></tr>
+        <tr><td>Ad Soyad, Firma</td><td>Talebinizin tarafımızca tanımlanması</td></tr>
+        <tr><td>E-posta, Telefon</td><td>Teklif/numune süreci hakkında sizinle iletişime geçilmesi</td></tr>
+        <tr><td>İlgilenilen Ürün, Mesaj</td><td>Talebinizin doğru şekilde değerlendirilip yanıtlanması</td></tr>
+      </table>
+      <p class="muted">
+        Bu veriler, Pazarlama ekibimize iletilir ve yalnızca talebinizle ilgilenmek, sizinle
+        iletişime geçmek ve ticari teklif sürecini yürütmek amacıyla kullanılır.
+      </p>
+    </div>
+
+    <div class="policy-card">
+      <h2>4) İşlenme Amacı, Hukuki Sebep ve Yöntem</h2>
+      <p>
+        Yukarıda belirtilen kişisel verileriniz; web sitemizdeki ilgili formu doldurup
+        göndermeniz suretiyle, elektronik ortamda, KVKK'nın 5. maddesinde yer alan
+        <strong> "ilgili kişinin açık rızasının bulunması"</strong> ve/veya
+        <strong> "bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması"</strong>
+        hukuki sebeplerine dayanılarak; iş başvurunuzun/talebinizin değerlendirilmesi ve
+        sizinle iletişime geçilmesi amaçlarıyla sınırlı olarak işlenmektedir.
+      </p>
+      <p>
+        Kişisel verileriniz, yukarıda belirtilen amaçlar dışında üçüncü taraflarla
+        paylaşılmaz, pazarlama amacıyla üçüncü kişilere satılmaz veya kiralanmaz.
+        Yalnızca yasal yükümlülüklerimiz gereği yetkili kamu kurum ve kuruluşlarıyla,
+        talep edilmesi halinde paylaşılabilir.
+      </p>
+    </div>
+
+    <div class="policy-card" id="haklariniz">
+      <h2>5) KVKK Madde 11 Uyarınca Haklarınız</h2>
+      <p>KVKK'nın 11. maddesi uyarınca, veri sorumlusuna başvurarak;</p>
+      <ul class="policy-list">
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>Kişisel verinizin işlenip işlenmediğini öğrenme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>İşlenmişse buna ilişkin bilgi talep etme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>Yurt içinde/dışında aktarıldığı üçüncü kişileri bilme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>Yapılan işlemlerin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</span></li>
+        <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="20 6 9 17 4 12"/></svg></span><span>Kanuna aykırı işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz.</span></li>
+      </ul>
+      <p class="muted">
+        Bu haklarınızı kullanmak için aşağıdaki iletişim bilgilerimizden bize yazılı olarak
+        başvurabilirsiniz.
+      </p>
+    </div>
+
+    <div class="policy-card" id="gizlilik-politikasi">
+      <h2>6) Gizlilik Politikası</h2>
+      <h3>Çerezler (Cookies)</h3>
+      <p>
+        Web sitemiz, temel işlevselliği sağlamak için sınırlı ölçüde teknik çerezler
+        kullanabilir. Sitemiz üzerinden toplanan kişisel veriler, pazarlama veya reklam
+        amaçlı üçüncü taraf çerez/izleme ağlarıyla paylaşılmaz.
+      </p>
+      <h3>Veri Güvenliği</h3>
+      <p>
+        Form aracılığıyla ilettiğiniz veriler, şifreli bağlantı (HTTPS) üzerinden güvenli
+        sunucularımıza iletilir ve yalnızca yetkilendirilmiş personelimiz tarafından
+        erişilebilir şekilde saklanır.
+      </p>
+      <h3>Üçüncü Taraf Bağlantılar</h3>
+      <p>
+        Sitemizde yer alan sosyal medya bağlantıları gibi üçüncü taraf sitelerin kendi
+        gizlilik politikaları geçerlidir; bu sitelerin içeriğinden MUTLUKAL sorumlu değildir.
+      </p>
+    </div>
+
+    <div class="policy-card" id="iletisim">
+      <h2>7) İletişim ve Başvuru</h2>
+      <p>
+        Kişisel verilerinizle ilgili sorularınız veya KVKK kapsamındaki taleplerinizi
+        aşağıdaki kanallardan bize iletebilirsiniz:
+      </p>
+      <div class="contact-box">
+        <strong>E-posta:</strong> info@mutlukal.com.tr<br/>
+        <strong>Telefon:</strong> (0364) 254 90 54<br/>
+        <strong>Adres:</strong> Organize Sanayi Bölgesi 6.Cadde No:10, 19100 Çorum Merkez/Çorum
+      </div>
+      <div class="signature">
+        Son Güncelleme: Eylül 2026
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    © 2026 MUTLUKAL GIDA — Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında bilgilendirme amacıyla yayınlanmıştır.
+  </footer>
+
+</body>
+</html>

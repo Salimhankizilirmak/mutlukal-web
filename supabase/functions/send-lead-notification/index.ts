@@ -32,7 +32,7 @@
 
 import nodemailer from 'npm:nodemailer@6.9.16';
 
-const IK_EMAIL = 'ik@mutlukal.com.tr';
+const IK_EMAILS = ['ik@mutlukal.com.tr', 's.nur@mutlukal.com.tr', 's.kalayci@mutlukal.com.tr'];
 const PAZARLAMA_EMAIL = 'marketing@mutlukal.com.tr';
 const OWNER_EMAIL = 'salimhankizilirmak@gmail.com';
 
@@ -62,7 +62,7 @@ function buildJobApplicationEmail(record: Record<string, unknown>) {
     <hr>
     <p style="color:#888;font-size:12px;">Bu e-posta mutlukal.com.tr üzerindeki "Bize Katılın" formundan otomatik gönderilmiştir.</p>
   `;
-  return { subject, html, to: [IK_EMAIL], bcc: [OWNER_EMAIL] };
+  return { subject, html, to: IK_EMAILS, bcc: [OWNER_EMAIL] };
 }
 
 function buildContactLeadEmail(record: Record<string, unknown>) {

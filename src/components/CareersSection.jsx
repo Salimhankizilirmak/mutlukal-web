@@ -16,6 +16,7 @@ export default function CareersSection() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [customPosition, setCustomPosition] = useState('');
+  const [kvkkConsent, setKvkkConsent] = useState(false);
   const [formData, setFormData] = useState({
     full_name: '',
     email: '',
@@ -47,6 +48,11 @@ export default function CareersSection() {
 
     const resolvedPosition = formData.position === CUSTOM_OPTION ? customPosition.trim() : formData.position;
 
+    if (!kvkkConsent) {
+      setError('Devam etmek için KVKK Aydınlatma Metni\'ni onaylamanız gerekiyor.');
+      return;
+    }
+
     if (!isSupabaseConfigured) {
       setError('Başvuru sistemi şu anda bakımda — lütfen bize doğrudan (0364) 254 90 54 numaralı hattan ulaşın.');
       return;
@@ -66,6 +72,7 @@ export default function CareersSection() {
     setSubmitted(true);
     setFormData({ full_name: '', email: '', phone: '', position: '', message: '' });
     setCustomPosition('');
+    setKvkkConsent(false);
   };
 
   return (
@@ -213,6 +220,26 @@ export default function CareersSection() {
                   className="w-full px-4 py-2.5 rounded-xl bg-[#FAF3E3] border border-[#C89438]/35 text-[#1B2A3A] placeholder-[#1B2A3A]/40 focus:outline-none focus:border-[#C89438]"
                 />
               </div>
+
+              <label className="flex items-start gap-2.5 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={kvkkConsent}
+                  onChange={(e) => setKvkkConsent(e.target.checked)}
+                  className="mt-0.5 w-4 h-4 rounded border-[#C89438]/50 text-[#C89438] focus:ring-[#C89438] cursor-pointer shrink-0"
+                />
+                <span className="text-[#5C6B73] font-medium leading-relaxed">
+                  <a
+                    href="/kvkk-aydinlatma-metni.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#C89438] font-bold hover:underline"
+                  >
+                    KVKK Aydınlatma Metni
+                  </a>
+                  'ni okudum, kişisel verilerimin başvurumun değerlendirilmesi amacıyla işlenmesini kabul ediyorum. *
+                </span>
+              </label>
 
               {error && (
                 <div className="text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">{error}</div>

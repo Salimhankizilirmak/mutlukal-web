@@ -174,8 +174,8 @@ export default function Footer({ onOpenContact }) {
         <div className="pt-8 border-t border-[#C89438]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#5C6B73]">
           <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           <div className="flex items-center gap-6 font-medium">
-            <a href="#" className="hover:text-[#C89438]">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-[#C89438]">{t('footer.kvkk')}</a>
+            <a href="/kvkk-aydinlatma-metni.html#gizlilik-politikasi" className="hover:text-[#C89438]">{t('footer.privacy')}</a>
+            <a href="/kvkk-aydinlatma-metni.html" className="hover:text-[#C89438]">{t('footer.kvkk')}</a>
             <button
               onClick={scrollToTop}
               className="p-2 rounded-lg bg-white text-[#1B2A3A] hover:text-[#C89438] border border-[#C89438]/35 transition-colors cursor-pointer shadow-sm"

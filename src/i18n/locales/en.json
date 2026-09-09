@@ -235,6 +235,9 @@
     "productOptions": { "tortilla": "Tortilla (Plain / Whole Wheat)", "cesnili": "Flavored Tortilla", "pizza": "Pizza Base", "ozel": "Other" },
     "messageLabel": "Description & Monthly Volume Request",
     "messagePlaceholder": "Your estimated monthly box/carton demand or special requests...",
+    "kvkkLinkLabel": "Privacy & Data Protection Notice",
+    "kvkkConsentText": " — I have read it and consent to my personal data being processed for the purpose of evaluating my request. *",
+    "kvkkRequired": "You must accept the Privacy & Data Protection Notice to continue.",
     "submitButton": "Send Quote & Sample Request"
   },
   "productModal": {

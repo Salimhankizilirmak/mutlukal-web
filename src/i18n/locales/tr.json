@@ -235,6 +235,9 @@
     "productOptions": { "tortilla": "Tortilla (Sade / Kepekli)", "cesnili": "Çeşnili Tortilla", "pizza": "Pizza Tabanı", "ozel": "Diğer" },
     "messageLabel": "Açıklama & Aylık Hacim Talebi",
     "messagePlaceholder": "Tahmini aylık koli/kutu talebiniz veya özel istekleriniz...",
+    "kvkkLinkLabel": "KVKK Aydınlatma Metni",
+    "kvkkConsentText": "'ni okudum, kişisel verilerimin talebimin değerlendirilmesi amacıyla işlenmesini kabul ediyorum. *",
+    "kvkkRequired": "Devam etmek için KVKK Aydınlatma Metni'ni onaylamanız gerekiyor.",
     "submitButton": "Teklif & Numune Talebini Gönder"
   },
   "productModal": {

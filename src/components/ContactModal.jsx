@@ -6,6 +6,8 @@ import { supabase, isSupabaseConfigured } from '../lib/supabaseClient';
 export default function ContactModal({ isOpen, onClose }) {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
+  const [kvkkConsent, setKvkkConsent] = useState(false);
+  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -19,6 +21,12 @@ export default function ContactModal({ isOpen, onClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError('');
+
+    if (!kvkkConsent) {
+      setError(t('contactModal.kvkkRequired'));
+      return;
+    }
 
     if (isSupabaseConfigured) {
       await supabase.from('contact_leads').insert({
@@ -35,6 +43,7 @@ export default function ContactModal({ isOpen, onClose }) {
     }
 
     setSubmitted(true);
+    setKvkkConsent(false);
     setTimeout(() => {
       setTimeout(() => {
         setSubmitted(false);
@@ -154,6 +163,30 @@ export default function ContactModal({ isOpen, onClose }) {
                   className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#C89438]/35 text-[#1B2A3A] placeholder-[#1B2A3A]/40 focus:outline-none focus:border-[#C89438] shadow-sm"
                 />
               </div>
+
+              <label className="flex items-start gap-2.5 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={kvkkConsent}
+                  onChange={(e) => setKvkkConsent(e.target.checked)}
+                  className="mt-0.5 w-4 h-4 rounded border-[#C89438]/50 text-[#C89438] focus:ring-[#C89438] cursor-pointer shrink-0"
+                />
+                <span className="text-[#5C6B73] font-medium leading-relaxed">
+                  <a
+                    href="/kvkk-aydinlatma-metni.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#C89438] font-bold hover:underline"
+                  >
+                    {t('contactModal.kvkkLinkLabel')}
+                  </a>
+                  {t('contactModal.kvkkConsentText')}
+                </span>
+              </label>
+
+              {error && (
+                <div className="text-xs text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2">{error}</div>
+              )}
 
               <button
                 type="submit"
