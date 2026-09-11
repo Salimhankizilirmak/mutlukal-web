@@ -78,13 +78,13 @@ export default function Navbar({ onOpenContact }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Brand Logo - MUTLUKAL Only */}
-          <a href="#" className="flex items-center gap-3 group shrink-0">
+          <a href="#" className="flex items-center gap-2 sm:gap-3 group shrink-0 min-w-0">
             <img
               src="/logo.png"
               alt="MUTLUKAL"
-              className="h-12 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
+              className="h-9 sm:h-12 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0"
             />
-            <span className="font-serif text-2xl font-bold tracking-wide text-[#1B2A3A] group-hover:text-[#C89438] transition-colors">
+            <span className="hidden sm:inline font-serif text-2xl font-bold tracking-wide text-[#1B2A3A] group-hover:text-[#C89438] transition-colors">
               MUTLUKAL
             </span>
           </a>
@@ -137,23 +137,33 @@ export default function Navbar({ onOpenContact }) {
             </a>
             <button
               onClick={onOpenContact}
-              className="relative group overflow-hidden px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#1B2A3A] via-[#2A3E52] to-[#1B2A3A] text-white font-bold text-sm shadow-md hover:shadow-xl hover:shadow-[#1B2A3A]/20 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap"
+              className="relative group overflow-hidden px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#C89438] via-[#E2B45F] to-[#C89438] text-[#1B2A3A] font-extrabold text-sm shadow-lg shadow-[#C89438]/30 hover:shadow-xl hover:shadow-[#C89438]/50 transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap"
             >
+              <span className="absolute inset-0 rounded-xl bg-[#E2B45F] blur-md opacity-60 animate-pulse -z-10" />
               <span className="relative z-10 flex items-center gap-1.5">
                 <span>{t('nav.offerButton')}</span>
-                <ChevronRight className="w-4 h-4 text-[#E2B45F] group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
+                <ChevronRight className="w-4 h-4 text-[#1B2A3A] group-hover:translate-x-1 rtl:rotate-180 transition-transform" />
               </span>
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg bg-white border border-[#C89438]/30 text-[#1B2A3A] hover:text-[#C89438] focus:outline-none shrink-0"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile CTA + Menu Button */}
+          <div className="flex lg:hidden items-center gap-2 shrink-0">
+            <button
+              onClick={onOpenContact}
+              className="relative overflow-hidden flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-lg bg-gradient-to-r from-[#C89438] via-[#E2B45F] to-[#C89438] text-[#1B2A3A] font-extrabold text-xs sm:text-sm shadow-md shadow-[#C89438]/40 active:scale-95 transition-transform cursor-pointer whitespace-nowrap"
+            >
+              <span>{t('nav.offerButton')}</span>
+              <ChevronRight className="w-3.5 h-3.5 rtl:rotate-180" />
+            </button>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 rounded-lg bg-white border border-[#C89438]/30 text-[#1B2A3A] hover:text-[#C89438] focus:outline-none shrink-0"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -161,6 +171,19 @@ export default function Navbar({ onOpenContact }) {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#FAF3E3]/98 backdrop-blur-xl border-b border-[#C89438]/25 px-6 py-6 transition-all max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="flex flex-col gap-4">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenContact();
+              }}
+              className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#C89438] via-[#E2B45F] to-[#C89438] text-[#1B2A3A] font-extrabold text-center shadow-lg shadow-[#C89438]/40 flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <span>{t('nav.offerButtonMobile')}</span>
+              <ChevronRight className="w-4 h-4 rtl:rotate-180" />
+            </button>
+
+            <div className="border-b border-[#1B2A3A]/10 -mx-6" />
+
             {allLinksForMobile.map((link) => (
               <a
                 key={link.name}
@@ -179,15 +202,6 @@ export default function Navbar({ onOpenContact }) {
               {t('nav.phone')}
             </a>
             <LanguageSwitcher compact />
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenContact();
-              }}
-              className="mt-2 w-full py-3 rounded-xl bg-[#1B2A3A] text-white font-bold text-center shadow-lg cursor-pointer"
-            >
-              {t('nav.offerButtonMobile')}
-            </button>
           </div>
         </div>
       )}

@@ -140,9 +140,11 @@ export default function ScrollCanvas({ loadedImages = [], onOpenContact }) {
 
             <button
               onClick={onOpenContact}
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-black/60 backdrop-blur-md text-white font-bold text-base border border-white/40 hover:bg-black/80 shadow-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
+              className="relative w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-[#C89438] via-[#E2B45F] to-[#C89438] text-[#1B2A3A] font-extrabold text-base shadow-2xl shadow-[#C89438]/40 hover:shadow-[#C89438]/60 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
             >
+              <span className="absolute inset-0 rounded-xl bg-[#E2B45F] blur-md opacity-50 animate-pulse -z-10" />
               <span>{t('hero.ctaOrder')}</span>
+              <ChevronRight className="w-5 h-5 rtl:rotate-180" />
             </button>
           </div>
         </div>
